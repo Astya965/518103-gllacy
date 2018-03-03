@@ -15,7 +15,15 @@
             <img src="" width="" height="" alt="Логотип сайта мороженного "Глейси"">
         </a>
         <ul>
-          <li><a href="#" alt="">Каталог</a></li>
+          <li><a href="#" alt="">Каталог
+            <ul>
+              <li><a href="#" alt="">Новинки</a><li>
+              <li><a href="#" alt="">Сливочное</a><li>
+              <li><a href="#" alt="">Щербеты</a><li>
+              <li><a href="#" alt="">Фруктовый лед</a><li>
+              <li><a href="#" alt="">Мелорин</a><li>
+            </ul>
+          </a></li>
           <li><a href="#" alt="">Доставка и оплата</a></li>
           <li><a href="#" alt="">О Компании</a></li>
         </ul>
@@ -23,8 +31,22 @@
 
       <div class="user-menu">
         <div class="search">
+          <div class="search-window">
+            <form method="get">
+              <input type="search" placeholder="Что ищем?">
+            </form>
+          </div>
         </div>
         <div class="login-link">
+          <div class="login-window">
+            <form method="get">
+              <input name="login" type="text" placeholder="Электронная почта">
+              <input name="password" type="password" placeholder="Пароль">
+              <a class="button" href="#">Войти</a>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </div>
         </div>
         <div class="cart">
         </div>
@@ -169,6 +191,18 @@
       </div>
 
     </footer>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <span class="modal-close">x</span>
+      <form method="get">
+        <input name="feedback-name" type="text" placeholder="Как вас зовут?">
+        <input name="feedback-email" type="email" placeholder="Ваша почта для ответа?">
+        <textarea placeholder="Напишите что-нибудь..."></textarea>
+      </form>
+      <button class="button">Отправить</button>
+    </section>
 
   </body>
 </html>
