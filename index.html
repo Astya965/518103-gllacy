@@ -35,34 +35,45 @@
         <div class="user-menu">
           <div class="search">
             <div class="search-window">
-              <form method="get">
-                <input type="search" placeholder="Что ищем?">
-              </form>
+              <a href="#" class="visually-hidden">Поиск</a>
+              <div class="search-form">
+                <form method="get">
+                  <input type="search" placeholder="Что ищем?">
+                </form>
+              </div>
             </div>
           </div>
           <div class="login-link">
             <div class="login-window">
-              <form method="post">
-                <input name="login" type="text" placeholder="Электронная почта" required>
-                <input name="password" type="password" placeholder="Пароль" required>
-                <a class="button" href="#">Войти</a>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
+              <a href="#" class="visually-hidden">Поиск</a>
+              <div class="login-form">
+                <form method="post">
+                  <input name="login" type="text" placeholder="Электронная почта" required>
+                  <input name="password" type="password" placeholder="Пароль" required>
+                  <div class="login-inner">
+                    <button class="button" type="submit">Войти</button>
+                    <div class="login-help">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
           <div class="cart">
+            <a href="#"><span></span></a>
           </div>
         </div>
 
         <div class="contact-description">
-          <p>С 10 до 20, ежедневно</p>
+          <p class="tel-hours">С 10 до 20, ежедневно</p>
           <p class="tel">8 812 450-25-25</p>
         </div>
 
       </header>
 
-      <main>
+      <main class="container">
 
         <h1 class="visually-hidden">Главная старница сайта мороженного Глейси</h1>
 
@@ -105,59 +116,81 @@
         <section class="popular-items">
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="popular-items">
-            <li class="popular-item popular-item">
-              <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-              <p><img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочного мороженного с апельсиновым джемом и цитрусовой стружкой"></p>
-              <p class="item-price">310₽<span>/кг</span></p>
+            <li class="catalog-item">
+              <a href="#">
+                <div class="catalog-item-inner">
+                  <img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочного мороженного с апельсиновым джемом и цитрусовой стружкой">
+                  <p class="item-price">310₽<span>/кг</span></p>
+                </div>
+                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              </a>
+              <button class="button">Быстрый просмотр</button>
             </li>
-            <li class="popular-item popular-item">
-              <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-              <p><img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочно-кофейного мороженного с кусочками шоколада"></p>
-              <p class="item-price">380₽<span>/кг</span></p>
+            <li class="catalog-item">
+              <a href="#">
+                <div class="catalog-item-inner">
+                  <img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочно-кофейного мороженного с кусочками шоколада">
+                  <p class="item-price">380₽<span>/кг</span></p>
+                </div>
+                <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              </a>
+              <button class="button">Быстрый просмотр</button>
             </li>
-            <li class="popular-item popular-item">
-              <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-              <p><img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочно-клубничного мороженного с присыпкой из белого шоколада"></p>
-              <p class="item-price">355₽<span>/кг</span></p>
+            <li class="catalog-item">
+              <a href="#">
+                <div class="catalog-item-inner">
+                  <img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочно-клубничного мороженного с присыпкой из белого шоколада">
+                  <p class="item-price">355₽<span>/кг</span></p>
+                </div>
+                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              </a>
+              <button class="button">Быстрый просмотр</button>
             </li>
-            <li class="popular-item popular-item">
-              <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-              <p><img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочного крем-брюле с карамельной подливкой"></p>
-              <p class="item-price">415₽<span>/кг</span></p>
+            <li class="catalog-item">
+              <a href="#">
+                <div class="catalog-item-inner">
+                  <img src="http://placehold.it/267x267" width="267" height="267" alt="Изображение вкусного сливочного крем-брюле с карамельной подливкой">
+                  <p class="item-price">415₽<span>/кг</span></p>
+                </div>
+                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              </a>
+              <button class="button">Быстрый просмотр</button>
             </li>
           </ul>
         </section>
 
         <section class="features">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+          <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</р2>
           <ul>
             <li class="feature-item feature-quality">
-              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
             </li>
             <li class="feature-item feature-natural">
-              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
             </li>
             <li class="feature-item feature-partners">
-              <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </li>
             <li class="feature-item feature-delivery">
-              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </li>
           </ul>
         </section>
 
         <div class="news-and-mailing">
           <article class="news">
-            <h2>Новое в нашем блоге</h2>
-            <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+            <h2 class="visually-hidden">Новости</p>
+            <div class="news-inner">
+              <p>Новое в нашем блоге</p>
+              <h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3>
+            </div>
           </article>
           <section class="mailing">
             <h2 class="visually-hidden">Подписка на новости</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form  method="post">
               <input name="email" type="email" placeholder="Электронная почта">
-              <button>Отправить</button>
+              <button class="button">Отправить</button>
             </form>
           </section>
         </div>
@@ -165,11 +198,13 @@
         <section class="main-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <img src="http://placehold.it/1200x640" width="1200" height="640" alt="Карта как до нас добраться">
-          <div class="contects">
-            <p>Адрес главного офиса <br> и офлайн-магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-            <p>Для заказов по телефону:
-            <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
-            <a class="button" href="#">Форма обратной связи</a>
+          <div class="wrapper">
+            <div class="contects">
+              <p>Адрес главного офиса <br> и офлайн-магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+              <p>Для заказов по телефону:
+              <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
+              <a class="button" href="#">Форма обратной связи</a>
+            </div>
           </div>
         </section>
 
@@ -186,14 +221,18 @@
           </ul>
         </div>
 
-        <nav class="footer-nav">
-          <ul>
-            <li><a class="partners" href="#">Для поставщиков</a></li>
-            <li><a href="#">О производстве</a></li>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
-          </ul>
-        </nav>
+        <div class="footer-nav">
+          <div class="footer-nav-inner">
+            <ul>
+              <li><a class="partners" href="#">Для поставщиков</a></li>
+              <li><a href="#">О производстве</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Наши документы</a></li>
+              <li><a href="#">Экологические стандарты</a></li>
+            </ul>
+          </div>
+        </div>
 
         <div class="footer-copyright">
           <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -208,14 +247,20 @@
 
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <p>Мы обязательно вам ответим!</p>
-      <span class="modal-close">x</span>
-      <form method="post">
-        <input name="feedback-name" type="text" placeholder="Как вас зовут?">
-        <input name="feedback-email" type="email" placeholder="Ваша почта для ответа?" required>
-        <textarea placeholder="Напишите что-нибудь..." required></textarea>
-      </form>
-      <button class="button">Отправить</button>
+      <div class="form-wrapper">
+        <form method="post">
+          <label class="visually-hidden">Как вас зовут?
+            <input name="feedback-name" type="text" placeholder="Как вас зовут?">
+          </label>
+          <label class="visually-hidden">Ваша почта для ответа??
+            <input name="feedback-email" type="email" placeholder="Ваша почта для ответа?" required>
+          </label>
+          <textarea placeholder="Напишите что-нибудь..." required></textarea>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close">x</button>
+        <p>Мы обязательно вам ответим!</p>
+      </div>
     </section>
 
   </body>
