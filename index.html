@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,16 +21,17 @@
 
         <nav class="site-navigation">
           <a class="main-header-logo">
-                <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
-            </a>
+            <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
+          </a>
           <ul class="nav-list">
-            <li class="nav-list-element">Каталог
-              <ul class="nav-catalog-list">
-                <li class="nav-catalog-list-element"><a class="nav-catalog-list-link" href="#">Новинки</a></li>
-                <li class="nav-catalog-list-element"><a class="nav-catalog-list-link" href="catalog.html">Сливочное</a></li>
-                <li class="nav-catalog-list-element"><a class="nav-catalog-list-link" href="#">Щербеты</a></li>
-                <li class="nav-catalog-list-element"><a class="nav-catalog-list-link" href="#">Фруктовый лед</a></li>
-                <li class="nav-catalog-list-element"><a class="nav-catalog-list-link" href="#">Мелорин</a></li>
+            <li class="nav-list-element">
+              <a class="nav-catalog-list-link" href="#">Каталог</a>
+              <ul class="nav-submenu-list">
+                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Новинки</a></li>
+                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="catalog.html">Сливочное</a></li>
+                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Щербеты</a></li>
+                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Фруктовый лед</a></li>
+                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Мелорин</a></li>
               </ul>
             </li>
             <li class="nav-list-element"><a class="nav-list-link" href="#">Доставка и оплата</a></li>
@@ -40,7 +42,7 @@
         <div class="user-menu">
           <div class="header-search">
             <div class="header-search-window">
-              <a class="btn btn-search visually-hidden" href="#">Поиск</a>
+              <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
               <div class="header-search-inner">
                 <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="header-search" class="visually-hidden">Введите, что ищем?</label>
@@ -70,7 +72,7 @@
             </div>
           </div>
           <div class="cart">
-            <a class="btn btn-cart" href="#" area-label="Ваша корзина"><span class="cart-inner">Пусто</span></a>
+            <a class="btn btn-cart" href="#"><span class="visually-hidden">Ваша корзина</span><span class="cart-inner">Пусто</span></a>
           </div>
         </div>
 
@@ -216,10 +218,10 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map.jpg" width="1200" height="428" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="container">
-          <div class="contects">
-            <p class="contects-description">Адрес главного офиса <br> и офлайн-магазина:<span class="contects-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-            <p class="contects-description">Для заказов по телефону:
-              <span class="contects-info">8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
+          <div class="contacts">
+            <p class="contacts-description">Адрес главного офиса <br> и офлайн-магазина:<span class="contacts-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+            <p class="contacts-description">Для заказов по телефону:
+              <span class="contacts-info">8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
             <a class="button" href="#">Форма обратной связи</a>
           </div>
         </div>
@@ -278,7 +280,7 @@
     <h2 class="visually-hidden">Обратная связь</h2>
     <div class="form-wrapper">
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно обратной связи</span>x</button>
-      <p class="modal-feedba feedback-caption">Мы обязательно вам ответим!</p>
+      <p class="modal-feedback feedback-caption">Мы обязательно вам ответим!</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
         <input id="feedback-name" name="feedback-name" type="text" placeholder="Как вас зовут?">

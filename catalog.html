@@ -14,7 +14,8 @@
 
       <nav class="site-navigation">
         <a class="main-header-logo" href="index.html">
-              <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси"></a>
+          <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
+        </a>
         <ul class="nav-list">
           <li class="nav-list-element nav-list-element-current">Каталог
             <ul class="nav-catalog-list">
@@ -47,7 +48,7 @@
       <div class="user-menu">
         <div class="header-search">
           <div class="header-search-window">
-            <a class="btn btn-search visually-hidden" href="#">Поиск</a>
+            <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
             <div class="header-search-inner">
               <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
                 <label for="header-search" class="visually-hidden">Введите, что ищем?</label>
@@ -77,6 +78,7 @@
           </div>
         </div>
         <div class="cart full-cart">
+          <span class="visually-hidden">Ваша корзина</span>
           <div class="cart-window">
             <div class="cart-form">
               <table class="cart-table">
@@ -144,63 +146,63 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтер товаров</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="filter-item">
-            <fieldset>
-              <legend class="filter-caption">Сортировка:</legend>
-              <select class="sorting-select" name="sorting" id="sorting">
-                            <option value="sorting-popular">по популярности</option>
-                            <option value="sorting-chip">сначала недорогие</option>
-                            <option value="sorting-expensive">сначала дорогие</option>
-                            <option value="sorting-fatty">по жирности</option>
-              </select>
-            </fieldset>
-          </div>
-          <div class="filter-item">
-            <fieldset>
-              <legend class="filter-caption visually-hidden">Фильтер по диапозону стоимости товаров</legend>
-              <p class="filter-caption">Цена: 100 руб. – 500 руб.</p>
-              <div class="price-filter-inner">
+          <fieldset class="filter-item">
+            <legend class="filter-caption">Сортировка:</legend>
+            <select class="sorting-select" name="sorting" id="sorting">
+                          <option value="sorting-popular">по популярности</option>
+                          <option value="sorting-chip">сначала недорогие</option>
+                          <option value="sorting-expensive">сначала дорогие</option>
+                          <option value="sorting-fatty">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-caption visually-hidden">Фильтер по диапозону стоимости товаров</legend>
+            <p class="filter-caption">Цена: 100 руб. – 500 руб.</p>
+            <div class="price-filter-inner">
+              <form class="price-filter-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="filter-line">
                   <div class="filter-active-line">
                     <div class="filter-ring"></div>
                     <div class="filter-ring"></div>
+                    <div class="price-filter-counter visually-hidden">
+                      <label for="price-filter-min"></label>
+                      <input id="price-filter-min" name="price-filter-min" type="number" placeholder="0">
+                      <label for="price-filter-max"></label>
+                      <input id="price-filter-max" name="price-filter-max" type="number" placeholder="10000">
+                    </div>
                   </div>
                 </div>
-              </div>
-            </fieldset>
-          </div>
-          <div class="filter-item">
-            <fieldset>
-              <legend class="filter-caption">Жирность:</legend>
-              <div class="fatty-inner">
-                <input name="fatty-toggle" id="fatty-0" type="radio" value="0%">
-                <label for="fatty-0">0%</label>
-                <input name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
-                <label for="fatty-less10">до 10%</label>
-                <input name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
-                <label for="fatty-less30">до 30%</label>
-                <input name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
-                <label for="fatty-more30">выше 30%</label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="filter-item">
-            <fieldset>
-              <legend class="filter-caption">Наполнители:</legend>
-              <div class="filler-inner">
-                <input type="checkbox" name="filler" id="fillers-chocolate" checked>
-                <label for="fillers-chocolate">шоколадные</label>
-                <input type="checkbox" name="filler" id="fillers-sugar" checked>
-                <label for="fillers-sugar">сахарные присыпки</label>
-                <input type="checkbox" name="filler" id="fillers-fruits">
-                <label for="fillers-fruits">фрукты</label>
-                <input type="checkbox" name="filler" id="fillers-syrup">
-                <label for="fillers-syrup">сиропы</label>
-                <input type="checkbox" name="filler" id="fillers-jam">
-                <label for="fillers-jam">джемы</label>
-              </div>
-            </fieldset>
-          </div>
+              </form>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-caption">Жирность:</legend>
+            <div class="fatty-inner">
+              <input name="fatty-toggle" id="fatty-0" type="radio" value="0%">
+              <label for="fatty-0">0%</label>
+              <input name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
+              <label for="fatty-less10">до 10%</label>
+              <input name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
+              <label for="fatty-less30">до 30%</label>
+              <input name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
+              <label for="fatty-more30">выше 30%</label>
+            </div>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend class="filter-caption">Наполнители:</legend>
+            <div class="filler-inner">
+              <input type="checkbox" name="filler" id="fillers-chocolate" checked>
+              <label for="fillers-chocolate">шоколадные</label>
+              <input type="checkbox" name="filler" id="fillers-sugar" checked>
+              <label for="fillers-sugar">сахарные присыпки</label>
+              <input type="checkbox" name="filler" id="fillers-fruits">
+              <label for="fillers-fruits">фрукты</label>
+              <input type="checkbox" name="filler" id="fillers-syrup">
+              <label for="fillers-syrup">сиропы</label>
+              <input type="checkbox" name="filler" id="fillers-jam">
+              <label for="fillers-jam">джемы</label>
+            </div>
+          </fieldset>
           <button class="button filter-button" type="submit">Применить</button>
         </form>
 
