@@ -1,0 +1,422 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #323232;
+  /* Убрать цвет переставить через переключатели. Пока добавлен для контрастности, */
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Общие стили кнопок */
+/* ВНИМАНИЕ, ПЛОХО РАБОТАЕТ! */
+
+.button {
+  color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.button:hover {
+  color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.button:active {
+  color: #ffffff;
+  border-radius: 50px;
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+/* Хлебные крошки */
+
+.breadcrums {
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+  color: #ffffff;
+}
+
+.breadcrums a {
+  color: #ffffff;
+  border-bottom: 1px solid #a9bbb1;
+}
+
+.breadcrums a:hover,
+.breadcrums a:active {
+  color: #ffbc9e;
+}
+
+/* Полная корзина */
+/* Ошибка с кнопкой, исправить */
+
+.cart-form {
+  font-size: 13px;
+  line-height: 16px;
+  background-color: #f8f7f4;
+}
+
+.cart-form.button {
+  background-color: #f8f7f4;
+}
+
+.cart-start-price {
+  color: #999999;
+}
+
+.cart-row-total-price {
+  border-top: 1px solid #cacac7;
+}
+
+.cart-total-price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* Слайдер - 100% я накосячила */
+
+/* .slider-item-1 {
+  background-color: #849d8f;
+  background-image: url("../img/promo1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-item-2 {
+  background-color: #8996a6;
+  background-image: url("../img/promo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-item-3 {
+  background-color: #9d8b84;
+  background-image: url("../img/promo3.png");
+  background-position: center;
+  background-repeat: no-repeat; */
+
+/* Слайды слайдера */
+
+.slider-text {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.35px;
+}
+
+.main-slider a {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+/* Навигация в шапке сайта */
+
+.site-navigation {
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.nav-list,
+.nav-submenu-list {
+  list-style: none;
+}
+
+.nav-list a {
+  color: #ffffff;
+  border-bottom: 1px solid #a9bbb1;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+  color: #333333;
+  border-radius: 50px;
+  border-bottom: none;
+  background-color: #f7f6f3;
+}
+
+.nav-list a:active {
+  border-top: 2px solid #696969;
+  background-color: #f8f7f4;
+}
+
+.nav-catalog-list-link.nav-list-element-current,
+.nav-submenu-list-link.nav-list-element-current {
+  color: #ffffff;
+  border-radius: 50px;
+  border-bottom: none;
+  background-color: #d07058;
+}
+
+/* Пользовательское меню в шапке */
+
+.user-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.user-menu-element {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Контакты в шапке */
+
+.contact-description {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.tel-hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.tel {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/* Промо */
+
+.promo-item {
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.promo-item a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-caption {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.promo-description {
+  font-size: 18px;
+}
+
+.promo-item.promo-item-raspberry {
+  background-color: #6c2231;
+  background-image: url("../img/background-raspberry.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo-item.promo-item-chocolate{
+  background-color: #41281c;
+  background-image: url("../img/background-chocolate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Популярные товары */
+
+.catalog-item-inner img {
+  border-radius: 50%;
+}
+
+.popular-items a {
+  color: #ffffff;
+}
+
+.popular-items-list {
+  list-style: none;
+}
+
+.item-caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.item-price {
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.kg {
+  font-size: 30px;
+}
+
+/* Приемущества Глейси */
+
+.features {
+  background-color: #ede1ca;
+  background-image: url("../img/background-pattern.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 10px;
+}
+
+.features-caption {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.features-list {
+  list-style: none;
+}
+
+/* Новости */
+
+.news {
+  background-color: #ffffff;
+  background-image: url("../img/news-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.news a {
+  color: #323232;
+}
+
+.news a:hover,
+.news a:active {
+  color: #ffbc9e;
+}
+
+.news-caption {
+  font-weight: 500;
+}
+
+.news-descripion {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+/* Рассылка */
+
+.mailing {
+  background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 8px, #92cdff 16px, #92cdff 24px, #fe9e90 32px, #fe9e90 40px);
+  border-radius: 10px;
+}
+
+.mailing-inner {
+  background-color: #f8f7f4;
+}
+
+.mailing-descripion {
+  color: #5a5a5a;
+}
+
+/* Карта и контакты */
+
+.contacts {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.contacts-description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-info {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Модальное окно */
+
+.form-wrapper {
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.feedback-caption {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* Соцсети в подвале */
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #e6ebe9;
+  border-radius: 50%;
+}
+
+/* Навигация в подвале */
+
+.footer-nav {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-nav-list a {
+  color: #ffffff;
+  border-bottom: 1px solid #a9bbb1;
+}
+
+.footer-nav-list a:hover,
+.footer-nav-list a:active {
+  color: #ffbc9e;
+}
+
+.partners {
+  font-weight: 700;
+}
+
+/* Копирайт */
+
+.footer-copyright a {
+  color: #fefefe;
+}
+
+.copyright-description {
+  color: #fefefe;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Дополнительные настройки */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

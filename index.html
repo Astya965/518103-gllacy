@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -27,20 +29,34 @@
             <li class="nav-list-element">
               <a class="nav-catalog-list-link" href="#">Каталог</a>
               <ul class="nav-submenu-list">
-                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Новинки</a></li>
-                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="catalog.html">Сливочное</a></li>
-                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Щербеты</a></li>
-                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Фруктовый лед</a></li>
-                <li class="nav-submenu-list-element"><a class="nav-submenu-list-link" href="#">Мелорин</a></li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Новинки</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Щербеты</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Мелорин</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-list-element"><a class="nav-list-link" href="#">Доставка и оплата</a></li>
-            <li class="nav-list-element"><a class="nav-list-link" href="#">О Компании</a></li>
+            <li class="nav-list-element">
+              <a class="nav-list-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-list-element">
+              <a class="nav-list-link" href="#">О Компании</a>
+            </li>
           </ul>
         </nav>
 
         <div class="user-menu">
-          <div class="header-search">
+          <div class="header-search user-menu-element">
             <div class="header-search-window">
               <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
               <div class="header-search-inner">
@@ -51,7 +67,7 @@
               </div>
             </div>
           </div>
-          <div class="login-link">
+          <div class="login-link user-menu-element">
             <div class="login-window">
               <a class="btn btn-link" href="#">Вход</a>
               <div class="login-inner">
@@ -71,7 +87,7 @@
               </div>
             </div>
           </div>
-          <div class="cart">
+          <div class="cart user-menu-element">
             <a class="btn btn-cart" href="#"><span class="visually-hidden">Ваша корзина</span><span class="cart-inner">Пусто</span></a>
           </div>
         </div>
@@ -100,15 +116,15 @@
           <div class="slider-inner">
             <div class="slider-item-1">
               <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
-              <a class="button" href="#">Давайте оба!</a>
+              <a class="button slider-button" href="#">Давайте оба!</a>
             </div>
             <div class="slider-item-2">
               <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
-              <a class="button" href="#">Давайте оба!</a>
+              <a class="button slider-button" href="#">Давайте оба!</a>
             </div>
             <div class="slider-item-3">
               <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
-              <a class="button" href="#">Давайте оба!</a>
+              <a class="button slider-button" href="#">Давайте оба!</a>
             </div>
           </div>
         </div>
@@ -135,7 +151,7 @@
                 <h3 class="item-caption">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 <div class="catalog-item-inner">
                   <img src="img/catalog-item1.jpg" width="267" height="267" alt="Вкусное сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
-                  <p class="item-price">310₽<span>/кг</span></p>
+                  <p class="item-price">310₽<span class="kg">/кг</span></p>
                 </div>
               </a>
               <button class="button">Быстрый просмотр</button>
@@ -145,7 +161,7 @@
                 <h3 class="item-caption">Сливочно-кофейное с кусочками шоколада</h3>
                 <div class="catalog-item-inner">
                   <img src="img/catalog-item2.jpg" width="267" height="267" alt="Вкусное сливочно-кофейное мороженное с кусочками шоколада">
-                  <p class="item-price">380₽<span>/кг</span></p>
+                  <p class="item-price">380₽<span class="kg">/кг</span></p>
                 </div>
               </a>
               <button class="button">Быстрый просмотр</button>
@@ -155,7 +171,7 @@
                 <h3 class="item-caption">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 <div class="catalog-item-inner">
                   <img src="img/catalog-item3.jpg" width="267" height="267" alt="Вкусное сливочно-клубничное мороженное с присыпкой из белого шоколада">
-                  <p class="item-price">355₽<span>/кг</span></p>
+                  <p class="item-price">355₽<span class="kg">/кг</span></p>
                 </div>
               </a>
               <button class="button">Быстрый просмотр</button>
@@ -165,7 +181,7 @@
                 <h3 class="item-caption">Сливочное крем-брюле с карамельной подливкой</h3>
                 <div class="catalog-item-inner">
                   <img src="img/catalog-item4.jpg" width="267" height="267" alt="Вкусное сливочное крем-брюле с карамельной подливкой">
-                  <p class="item-price">415₽<span>/кг</span></p>
+                  <p class="item-price">415₽<span class="kg">/кг</span></p>
                 </div>
               </a>
               <button class="button">Быстрый просмотр</button>
