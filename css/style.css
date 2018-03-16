@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -16,11 +15,11 @@ a {
 }
 
 /* Общие стили кнопок */
+
 /* ВНИМАНИЕ, ПЛОХО РАБОТАЕТ! */
 
 .button {
   font: inherit;
-
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -93,8 +92,7 @@ a {
   color: #ffffff;
 }
 
-.nav-list,
-.nav-submenu-list {
+.nav-list, .nav-submenu-list {
   list-style: none;
 }
 
@@ -103,8 +101,7 @@ a {
   border-bottom: 1px solid #a9bbb1;
 }
 
-.nav-list a:hover,
-.nav-list a:active {
+.nav-list a:hover, .nav-list a:active {
   color: #333333;
   border-radius: 50px;
   border-bottom: none;
@@ -116,8 +113,7 @@ a {
   background-color: #f8f7f4;
 }
 
-.nav-catalog-list-link.nav-list-element-current,
-.nav-submenu-list-link.nav-list-element-current {
+.nav-catalog-list-link.nav-list-element-current, .nav-submenu-list-link.nav-list-element-current {
   color: #ffffff;
   border-radius: 50px;
   border-bottom: none;
@@ -140,10 +136,8 @@ a {
 
 /* Формм пользовательского меню в шапке */
 
-.header-search-form input,
-.user-form input {
+.header-search-form input, .user-form input {
   font: inherit;
-
   color: #323232;
   font-size: 16px;
   font-weight: 700;
@@ -153,27 +147,21 @@ a {
   background-color: #ffffff;
 }
 
-.header-search-form input::placeholder,
-.user-form input::placeholder {
+.header-search-form input::placeholder, .user-form input::placeholder {
   font: inherit;
-
   color: #999999;
   font-size: 14px;
   font-weight: 400;
   border: 1px solid #d3d3d2;
 }
 
-.header-search-form input:hover,
-.user-form input:hover {
+.header-search-form input:hover, .user-form input:hover {
   font: inherit;
-
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.header-search-form input:active,
-.user-form input:active {
+.header-search-form input:active, .user-form input:active {
   font: inherit;
-
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -224,7 +212,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.promo-item.promo-item-chocolate{
+.promo-item.promo-item-chocolate {
   background-color: #41281c;
   background-image: url("../img/background-chocolate.jpg");
   background-position: center;
@@ -237,20 +225,16 @@ a {
   border-radius: 50%;
 }
 
-.popular-items a,
-.catalog-list a {
+.popular-items a, .catalog-list a {
   color: #ffffff;
 }
 
-.popular-items a:hover,
-.catalog-list a:hover,
-.popular-items a:active,
-.catalog-list a:active {
-  color: #ffbc9e;;
+.popular-items a:hover, .catalog-list a:hover, .popular-items a:active, .catalog-list a:active {
+  color: #ffbc9e;
+  ;
 }
 
-.popular-items-list,
-.catalog-list {
+.popular-items-list, .catalog-list {
   list-style: none;
 }
 
@@ -305,8 +289,7 @@ a {
   color: #323232;
 }
 
-.news a:hover,
-.news a:active {
+.news a:hover, .news a:active {
   color: #ffbc9e;
 }
 
@@ -369,10 +352,8 @@ a {
 
 /* Модельное окно - форма */
 
-.feedback-form input,
-.feedback-form textarea {
+.feedback-form input, .feedback-form textarea {
   font: inherit;
-
   color: #323232;
   font-size: 16px;
   font-weight: 700;
@@ -382,27 +363,21 @@ a {
   background-color: #ffffff;
 }
 
-.feedback-form input::placeholder,
-.feedback-form textarea::placeholder {
+.feedback-form input::placeholder, .feedback-form textarea::placeholder {
   font: inherit;
-
   color: #999999;
   font-size: 14px;
   font-weight: 400;
   border: 1px solid #d3d3d2;
 }
 
-.feedback-form input:hover,
-.feedback-form textarea:hover {
+.feedback-form input:hover, .feedback-form textarea:hover {
   font: inherit;
-
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.feedback-form input:active,
-.feedback-form textarea:active {
+.feedback-form input:active, .feedback-form textarea:active {
   font: inherit;
-
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -422,8 +397,7 @@ a {
   font-weight: 500;
 }
 
-.sorting-select,
-.filter-item-inner {
+.sorting-select, .filter-item-inner {
   line-height: 18px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -448,12 +422,12 @@ a {
   border-bottom: 1px solid #a9bbb1;
 }
 
-.breadcrums a:hover,
-.breadcrums a:active {
+.breadcrums a:hover, .breadcrums a:active {
   color: #ffbc9e;
 }
 
 /* Полная корзина */
+
 /* Ошибка с кнопкой, исправить */
 
 .cart-form {
@@ -492,7 +466,7 @@ a {
   line-height: 18px;
 }
 
-.pagination-item-current a{
+.pagination-item-current a {
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
@@ -525,8 +499,7 @@ a {
   border-bottom: 1px solid #a9bbb1;
 }
 
-.footer-nav-list a:hover,
-.footer-nav-list a:active {
+.footer-nav-list a:hover, .footer-nav-list a:active {
   color: #ffbc9e;
 }
 
@@ -540,8 +513,7 @@ a {
   color: #fefefe;
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:active {
+.footer-copyright a:hover, .footer-copyright a:active {
   color: #ffbc9e;
 }
 
