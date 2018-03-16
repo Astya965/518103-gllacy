@@ -19,9 +19,14 @@ a {
 /* ВНИМАНИЕ, ПЛОХО РАБОТАЕТ! */
 
 .button {
+  font: inherit;
+
+  text-align: center;
   color: #ffffff;
+  vertical-align: middle;
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #ffffff;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
@@ -131,6 +136,45 @@ a {
 .user-menu-element {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Формм пользовательского меню в шапке */
+
+.header-search-form input,
+.user-form input {
+  font: inherit;
+
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+}
+
+.header-search-form input::placeholder,
+.user-form input::placeholder {
+  font: inherit;
+
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #d3d3d2;
+}
+
+.header-search-form input:hover,
+.user-form input:hover {
+  font: inherit;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.header-search-form input:active,
+.user-form input:active {
+  font: inherit;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 /* Контакты в шапке */
@@ -321,6 +365,45 @@ a {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
+}
+
+/* Модельное окно - форма */
+
+.feedback-form input,
+.feedback-form textarea {
+  font: inherit;
+
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  font: inherit;
+
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #d3d3d2;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  font: inherit;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feedback-form input:active,
+.feedback-form textarea:active {
+  font: inherit;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 /* Заголовок страницы каталога */
