@@ -15,115 +15,119 @@
 
     <header class="main-header">
 
-      <nav class="site-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
-        </a>
-        <ul class="nav-list">
-          <li class="nav-list-element">
-            <a class="nav-catalog-list-link nav-list-element-current">Каталог</a>
-            <ul class="nav-submenu-list">
-              <li class="nav-submenu-list-element">
-                <a class="nav-submenu-list-link" href="#">Новинки</a>
-              </li>
-              <li class="nav-submenu-list-element">
-                <a class="nav-submenu-list-link nav-list-element-current" href="catalog.html">Сливочное</a>
-              </li>
-              <li class="nav-submenu-list-element">
-                <a class="nav-submenu-list-link" href="#">Щербеты</a>
-              </li>
-              <li class="nav-submenu-list-element">
-                <a class="nav-submenu-list-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="nav-submenu-list-element">
-                <a class="nav-submenu-list-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-list-element">
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="nav-list-element">
-            <a href="#">О Компании</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="upper-main-header">
 
-      <div class="user-menu">
-        <div class="header-search user-menu-element">
-          <div class="header-search-window">
-            <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
-            <div class="header-search-inner">
-              <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label for="header-search" class="visually-hidden">Введите, что ищем?</label>
-                <input id="header-search" type="search" placeholder="Что ищем?">
-              </form>
+        <nav class="site-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
+          </a>
+          <ul class="nav-list">
+            <li class="nav-list-element">
+              <a class="nav-catalog-list-link nav-list-element-current">Каталог</a>
+              <ul class="nav-submenu-list hidden">
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Новинки</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link nav-list-element-current" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Щербеты</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="nav-submenu-list-element">
+                  <a class="nav-submenu-list-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-element">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-list-element">
+              <a href="#">О Компании</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user-menu">
+          <div class="header-search user-menu-element">
+            <div class="header-search-window">
+              <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
+              <div class="header-search-inner hidden">
+                <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label for="header-search" class="visually-hidden">Введите, что ищем?</label>
+                  <input id="header-search" type="search" placeholder="Что ищем?">
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="login-link user-menu-element">
-          <div class="login-window">
-            <a class="btn btn-link" href="#">Вход</a>
-            <div class="login-inner">
-              <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-                <label for="user-login" class="visually-hidden">Введите свою электронную почту. Это объязательное поле для входа</label>
-                <input id="user-login" name="login" type="email" placeholder="Электронная почта" required>
-                <label for="user-password" class="visually-hidden">Введите свой пароль. Это объязательное поле для входа</label>
-                <input id="user-password" name="password" type="password" placeholder="Пароль" required>
-                <div class="login-inner">
-                  <button class="button" type="submit">Войти</button>
-                  <div class="login-help">
-                    <a class="login-link" href="#">Забыли пароль?</a>
-                    <a class="login-link" href="#">Новая регистрация</a>
+          <div class="login-link user-menu-element">
+            <div class="login-window">
+              <a class="btn btn-link" href="#">Вход</a>
+              <div class="login-inner hidden">
+                <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label for="user-login" class="visually-hidden">Введите свою электронную почту. Это объязательное поле для входа</label>
+                  <input id="user-login" name="login" type="email" placeholder="Электронная почта" required>
+                  <label for="user-password" class="visually-hidden">Введите свой пароль. Это объязательное поле для входа</label>
+                  <input id="user-password" name="password" type="password" placeholder="Пароль" required>
+                  <div class="login-inner">
+                    <button class="button" type="submit">Войти</button>
+                    <div class="login-help">
+                      <a class="login-link" href="#">Забыли пароль?</a>
+                      <a class="login-link" href="#">Новая регистрация</a>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="cart full-cart user-menu-element">
+            <span class="visually-hidden">Ваша корзина</span>
+            <div class="cart-window">
+              <div class="cart-form hidden">
+                <table class="cart-table">
+                  <thead class="cart-caprions visually-hidden">
+                    <tr>
+                      <th scope="col">Удаление товаров из корзины</th>
+                      <th scope="col">Название товара</th>
+                      <th scope="col">Вес товара и цена за килограмм</th>
+                      <th scope="col">Итоговая цена товара</th>
+                    </tr>
+                  </thead>
+                  <tbody class="cart-inner">
+                    <tr class="cart-row">
+                      <td class="cart-del">
+                        <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
+                      </td>
+                      <td class="cart-name">Пломбир с апельсиновым джемом</td>
+                      <td class="cart-calculate">1,5 кг х
+                        <span class="cart-start-price">200 руб.</span>
+                      </td>
+                      <td class="cart-price">300 руб.</td>
+                    </tr>
+                    <tr class="cart-row">
+                      <td class="cart-del">
+                        <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
+                      </td>
+                      <td class="cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="cart-calculate">1,5 кг х
+                        <span class="cart-start-price">300 руб.</span>
+                      </td>
+                      <td class="cart-price">450 руб.</td>
+                    </tr>
+                    <tr class="cart-row cart-row-total-price">
+                      <td colspan="4" class="cart-total-price"><strong>Итого: 750 руб.</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="button" type="submit">Оформить заказ</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="cart full-cart user-menu-element">
-          <span class="visually-hidden">Ваша корзина</span>
-          <div class="cart-window">
-            <div class="cart-form">
-              <table class="cart-table">
-                <thead class="cart-caprions visually-hidden">
-                  <tr>
-                    <th scope="col">Удаление товаров из корзины</th>
-                    <th scope="col">Название товара</th>
-                    <th scope="col">Вес товара и цена за килограмм</th>
-                    <th scope="col">Итоговая цена товара</th>
-                  </tr>
-                </thead>
-                <tbody class="cart-inner">
-                  <tr class="cart-row">
-                    <td class="cart-del">
-                      <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
-                    </td>
-                    <td class="cart-name">Пломбир с апельсиновым джемом</td>
-                    <td class="cart-calculate">1,5 кг х
-                      <span class="cart-start-price">200 руб.</span>
-                    </td>
-                    <td class="cart-price">300 руб.</td>
-                  </tr>
-                  <tr class="cart-row">
-                    <td class="cart-del">
-                      <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
-                    </td>
-                    <td class="cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td class="cart-calculate">1,5 кг х
-                      <span class="cart-start-price">300 руб.</span>
-                    </td>
-                    <td class="cart-price">450 руб.</td>
-                  </tr>
-                  <tr class="cart-row cart-row-total-price">
-                    <td colspan="4" class="cart-total-price"><strong>Итого: 750 руб.</strong></td>
-                  </tr>
-                </tbody>
-              </table>
-              <button class="button" type="submit">Оформить заказ</button>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <div class="contact-description">

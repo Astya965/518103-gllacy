@@ -14,6 +14,13 @@ a {
   text-decoration: none;
 }
 
+/* Центровщик */
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
 /* Общие стили кнопок */
 
 /* ВНИМАНИЕ, ПЛОХО РАБОТАЕТ! */
@@ -21,6 +28,7 @@ a {
 .button {
   font: inherit;
   text-align: center;
+  padding:11px 23px 13px;
   color: #ffffff;
   vertical-align: middle;
   border-radius: 50px;
@@ -47,7 +55,7 @@ a {
 
 /* Слайдер - 100% я накосячила */
 
-/* .slider-item-1 {
+.slider-item-1 {
   background-color: #849d8f;
   background-image: url("../img/promo1.png");
   background-position: center;
@@ -65,15 +73,29 @@ a {
   background-color: #9d8b84;
   background-image: url("../img/promo3.png");
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+}
+
+.slider-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 496px;
+  width: 670px;
+  margin: 0 auto 35px;
+}
 
 /* Слайды слайдера */
 
 .slider-text {
+  text-align: center;
   color: #ffffff;
   font-size: 60px;
   font-weight: 700;
   line-height: 60.35px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-slider a {
@@ -84,9 +106,57 @@ a {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
+.slider-button {
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 41px;
+  padding-right: 43px;
+  margin-top: 28px;
+  margin-bottom: 7px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+/* Центровщик внутри шапки */
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.upper-main-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1146px;
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Навигация в шапке сайта */
 
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
 .site-navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
@@ -96,7 +166,21 @@ a {
   list-style: none;
 }
 
+.nav-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 676px;
+  padding: 0;
+  margin: 0;
+}
+
 .nav-list a {
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 13px;
+  margin: 1px;
   color: #ffffff;
   border-bottom: 1px solid #a9bbb1;
 }
@@ -122,6 +206,13 @@ a {
 
 /* Пользовательское меню в шапке */
 
+.user-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 267px;
+}
+
 .user-menu a {
   font-size: 14px;
   font-weight: 500;
@@ -130,11 +221,29 @@ a {
 }
 
 .user-menu-element {
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Формм пользовательского меню в шапке */
+.header-search {
+  width: 33px;
+  border-radius: 50%;
+  margin-right: 1px;
+}
+
+.login-link {
+  width: 93px;
+}
+
+.cart {
+  width: 117px;
+}
+
+/* Формы пользовательского меню в шапке */
 
 .header-search-form input, .user-form input {
   font: inherit;
@@ -168,6 +277,9 @@ a {
 /* Контакты в шапке */
 
 .contact-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: #ffffff;
   font-weight: 700;
 }
@@ -175,19 +287,32 @@ a {
 .tel-hours {
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
 }
 
 .tel {
   font-size: 22px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Промо */
 
+.main-promo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2px 40px;
+}
+
 .promo-item {
+  width: 560px;
+  min-height: 230px;
   color: #ffffff;
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 18px;
 }
 
 .promo-item a {
@@ -197,11 +322,13 @@ a {
 }
 
 .promo-caption {
+  margin: 16px 18px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .promo-description {
+  margin: 0 20px 45px;
   font-size: 18px;
 }
 
@@ -219,7 +346,28 @@ a {
   background-repeat: no-repeat;
 }
 
+.promo-item .button {
+  float: right;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 /* Товары*/
+
+.popular-items-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.catalog-item-link {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  text-align: center;
+  width: 267px;
+}
 
 .catalog-item-inner img {
   border-radius: 50%;
@@ -231,20 +379,28 @@ a {
 
 .popular-items a:hover, .catalog-list a:hover, .popular-items a:active, .catalog-list a:active {
   color: #ffbc9e;
-  ;
 }
 
 .popular-items-list, .catalog-list {
   list-style: none;
 }
 
+.popular-items .button {
+  display: block;
+  width: 203px;
+  margin: 0 auto;
+}
+
 .item-caption {
+  order: -1;
+  margin: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
 }
 
 .item-price {
+  margin: 0;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   font-size: 45px;
   font-weight: 700;
@@ -255,34 +411,69 @@ a {
   font-size: 30px;
 }
 
+.popular-items .hidden {
+  display: none;
+}
+
 /* Приемущества Глейси */
 
 .features {
+  min-height: 278px;
+  padding: 27px 20px 0;
+  margin-bottom: 40px;
   background-color: #ede1ca;
   background-image: url("../img/background-pattern.jpg");
   background-position: center;
   background-repeat: repeat;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .features-caption {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
 }
 
 .features-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item {
+  width: 476px;
+  padding-left: 57px;
+  margin-right: 10px;
+  margin-bottom: 25px;
 }
 
 /* Новости */
+
+.news-and-mailing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.news-and-mailing-item {
+  width: 560px;
+  min-height: 220px;
+}
 
 .news {
   background-color: #ffffff;
   background-image: url("../img/news-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .news a {
@@ -295,9 +486,13 @@ a {
 
 .news-caption {
   font-weight: 500;
+  margin: 23px 19px 5px;
 }
 
 .news-descripion {
+  width: 280px;
+  margin: 0;
+  margin-left: 19px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -306,22 +501,70 @@ a {
 
 /* Рассылка */
 
-.mailing {
-  background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 8px, #92cdff 16px, #92cdff 24px, #fe9e90 32px, #fe9e90 40px);
-  border-radius: 10px;
+.news-and-mailing-item.mailing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 4px, #92cdff 8px, #92cdff 12px, #f8f7f4 16px, #f8f7f4 20px, #fe9e90 24px, #fe9e90 28px);
+  border-radius: 15px;
 }
 
+/* АААААА! Почему содержимое 210 и граница по 5 дают 230??? В отладчике нет никаких зацепок */
+
 .mailing-inner {
+  width: 550px;
+  min-height: 210px;
+  margin: 0;
   background-color: #f8f7f4;
+  border-radius: 15px;
 }
 
 .mailing-descripion {
+  margin: 30px 20px;
   color: #5a5a5a;
+}
+
+.mailing-form input {
+  width: 338px;
+  min-height: 44px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  font: inherit;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+}
+
+.mailing-form input::placeholder {
+  width: 368px;
+  min-height: 44px;
+  font: inherit;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mailing-form input:hover {
+  font: inherit;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.mailing-form input:active {
+  border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
 /* Карта и контакты */
 
 .contacts {
+  width: 302px;
+  min-height: 305px;
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -335,6 +578,12 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.main-map {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
 }
 
 /* Модальное окно */
