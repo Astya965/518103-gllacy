@@ -602,7 +602,8 @@ a {
 }
 
 .contacts .button {
-  margin-top: 60px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .main-map-inner {
@@ -721,11 +722,14 @@ a {
 
 /* Сортировка в каталоге */
 
-.filters {
+.filters-form {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 880px;
+  align-content: space-between;
+  width: 862px;
+  min-height: 130px;
+  margin-bottom: 40px;
   color: #ffffff;
   font-weight: 500;
 }
@@ -736,7 +740,8 @@ a {
   border: 0;
 }
 
-.sorting-select, .filter-item-inner {
+.sorting-select,
+.filter-item-inner {
   line-height: 18px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -758,17 +763,75 @@ a {
   color: #ffffff;
 }
 
+.filter-item-inner {
+  height: 36px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: 5px;
+  padding: 17px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.price-filter-caption {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
 .price-filter-inner {
   width: 220px;
-  min-height: 37px;
-  padding: 22px 17px;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filter-line {
   width: 176px;
   height: 4px;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
   background-color: rgba(248, 247, 247, 0.5);
+}
+
+.fatty-inner,
+.filler-inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 415px;
+}
+
+.filler-inner {
+  width: 703px;
+}
+
+.filter-button {
+  align-self: flex-end;
+  width: 144px;
+  height: 35px;
+  padding: 7px 29px 12px;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.filter-button:hover {
+  color: #323232;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  color: #323232;
+  border-radius: 50px;
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
 }
 
 /* Хлебные крошки */
@@ -824,19 +887,50 @@ a {
   line-height: 18px;
 }
 
+/* Разметка каталога товаров */
+
+.catalog-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 1146px;
+  min-height: 1050px;
+  padding: 0;
+  align-content: space-between;
+}
+
 /* Пагинатор */
 
+.catalog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
 .pagination-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 267px;
+  margin: 25px;
+  margin-bottom: 25px;
   list-style: none;
 }
 
-.pagination-list a {
+.pagination-list a,
+.pagination-item {
+  width: 27px;
+  height: 26px;
+  margin-left: 2px;
   color: #ffffff;
   font-weight: 500;
   line-height: 18px;
+  text-align: center;
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current {
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;

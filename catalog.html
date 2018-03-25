@@ -173,22 +173,20 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-caption visually-hidden">Фильтер по диапозону стоимости товаров</legend>
-            <p class="filter-caption">Цена: 100 руб. – 500 руб.</p>
+            <p class="filter-caption price-filter-caption">Цена: 100 руб. – 500 руб.</p>
             <div class="price-filter-inner filter-item-inner">
-              <form class="price-filter-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="filter-line">
-                  <div class="filter-active-line">
-                    <div class="filter-ring"></div>
-                    <div class="filter-ring"></div>
-                    <div class="price-filter-counter visually-hidden">
-                      <label for="price-filter-min"></label>
-                      <input id="price-filter-min" name="price-filter-min" type="number" placeholder="0">
-                      <label for="price-filter-max"></label>
-                      <input id="price-filter-max" name="price-filter-max" type="number" placeholder="10000">
-                    </div>
+              <div class="filter-line">
+                <div class="filter-active-line">
+                  <div class="filter-ring"></div>
+                  <div class="filter-ring"></div>
+                  <div class="price-filter-counter visually-hidden">
+                    <label for="price-filter-min"></label>
+                    <input id="price-filter-min" name="price-filter-min" type="number" placeholder="0">
+                    <label for="price-filter-max"></label>
+                    <input id="price-filter-max" name="price-filter-max" type="number" placeholder="10000">
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </fieldset>
           <fieldset class="filter-item">
@@ -219,7 +217,7 @@
               <label for="fillers-jam">джемы</label>
             </div>
           </fieldset>
-          <button class="button filter-button" type="submit">Применить</button>
+          <button class="filter-button" type="submit">Применить</button>
         </form>
 
       </section>
