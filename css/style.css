@@ -283,11 +283,14 @@ a {
   background-color: #f8f7f4;
 }
 
-.nav-list-element-current, .nav-list-element-current {
+.nav-list-element-current {
   color: #ffffff;
   border-radius: 50px;
-  border-bottom: none;
   background-color: #d07058;
+}
+
+.nav-list-element-current a {
+  border-bottom: none;
 }
 
 /* Пользовательское меню в шапке */
@@ -567,10 +570,23 @@ a {
   list-style: none;
 }
 
-.popular-items .button {
-  display: block;
+.catalog-item .button {
+  display: none;
   width: 203px;
   margin: 0 auto;
+}
+
+.catalog-item {
+  margin-bottom: 45px;
+}
+
+.catalog-item:hover {
+  width: 296px;
+  height: 408px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .item-caption {
@@ -593,10 +609,6 @@ a {
 
 .kg {
   font-size: 30px;
-}
-
-.popular-items .hidden {
-  display: none;
 }
 
 /* Приемущества Глейси */
@@ -921,12 +933,24 @@ a {
 
 /* Полная корзина */
 
-.cart.full-cart {
+.full-cart {
+  position: relative;
+  padding-right: 15px;
   color: #323232;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   background-color: #f8f7f4;
+}
+
+.full-cart::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Заголовок страницы каталога и фон каталога */
@@ -1006,6 +1030,7 @@ a {
 }
 
 .price-filter-inner {
+  position: relative;
   width: 220px;
 }
 
@@ -1018,6 +1043,42 @@ a {
   background-color: rgba(248, 247, 247, 0.5);
 }
 
+.filter-active-line {
+  width: 107px;
+  height: 4px;
+  background-color: #f8f7f4;
+  margin-left: 15px;
+}
+
+.filter-ring {
+  position: absolute;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.ring-min {
+  left: 35px;
+}
+
+.ring-max {
+  left: 132px;
+}
+
+.filter-item-inner label{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
 .fatty-inner,
 .filler-inner {
   display: flex;
@@ -1027,7 +1088,49 @@ a {
   width: 415px;
 }
 
+.filter-toggle + label::before,
+.filter-toggle:checked + label::after,
+.filter-checkbox + label::before,
+.filter-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.8;
+}
+
+.filter-toggle + label::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.filter-toggle:checked + label::after {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-checkbox + label::before {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-checkbox:checked + label::after {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-toggle + label:hover::before,
+.filter-checkbox + label:hover::before {
+  opacity: 1;
+}
+
+.filter-toggle + label:disabled::before,
+.filter-checkbox + label:disabled::before {
+  opacity: 0.4;
+}
+
 .filler-inner {
+  position: relative;
   width: 703px;
 }
 

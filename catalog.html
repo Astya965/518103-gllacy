@@ -179,14 +179,14 @@
                 <div class="price-filter-inner filter-item-inner">
                   <div class="filter-line">
                     <div class="filter-active-line">
-                      <div class="filter-ring"></div>
-                      <div class="filter-ring"></div>
-                      <div class="price-filter-counter visually-hidden">
-                        <label for="price-filter-min"></label>
-                        <input id="price-filter-min" name="price-filter-min" type="number" placeholder="0">
-                        <label for="price-filter-max"></label>
-                        <input id="price-filter-max" name="price-filter-max" type="number" placeholder="10000">
-                      </div>
+                  </div>
+                    <div class="filter-ring ring-min"></div>
+                    <div class="filter-ring ring-max"></div>
+                    <div class="price-filter-counter visually-hidden">
+                      <label for="price-filter-min"></label>
+                      <input id="price-filter-min" name="price-filter-min" type="number" placeholder="0">
+                      <label for="price-filter-max"></label>
+                      <input id="price-filter-max" name="price-filter-max" type="number" placeholder="10000">
                     </div>
                   </div>
                 </div>
@@ -194,28 +194,28 @@
               <fieldset class="filter-item">
                 <legend class="filter-caption">Жирность:</legend>
                 <div class="fatty-inner filter-item-inner">
-                  <input name="fatty-toggle" id="fatty-0" type="radio" value="0%">
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-0" type="radio" value="0%">
                   <label for="fatty-0">0%</label>
-                  <input name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
                   <label for="fatty-less10">до 10%</label>
-                  <input name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
                   <label for="fatty-less30">до 30%</label>
-                  <input name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
+                  <input class="visually-hidden filter-toggle" ="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
                   <label for="fatty-more30">выше 30%</label>
                 </div>
               </fieldset>
               <fieldset class="filter-item">
                 <legend class="filter-caption">Наполнители:</legend>
                 <div class="filler-inner filter-item-inner">
-                  <input type="checkbox" name="filler" id="fillers-chocolate" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler" id="fillers-chocolate" checked>
                   <label for="fillers-chocolate">шоколадные</label>
-                  <input type="checkbox" name="filler" id="fillers-sugar" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler" id="fillers-sugar" checked>
                   <label for="fillers-sugar">сахарные присыпки</label>
-                  <input type="checkbox" name="filler" id="fillers-fruits">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler" id="fillers-fruits">
                   <label for="fillers-fruits">фрукты</label>
-                  <input type="checkbox" name="filler" id="fillers-syrup">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler" id="fillers-syrup">
                   <label for="fillers-syrup">сиропы</label>
-                  <input type="checkbox" name="filler" id="fillers-jam">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler" id="fillers-jam">
                   <label for="fillers-jam">джемы</label>
                 </div>
               </fieldset>
@@ -390,15 +390,15 @@
             <div class="footer-social">
               <ul class="social-list">
                 <li class="social-item">
-                  <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a>
+                  <a class="social-button twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
                 </li>
                 <li class="social-item">
-                  <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
+                  <a class="social-button instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
                 </li>
-                <li class="social-item">
+                <li class="social-item fb">
                   <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
                 </li>
-                <li class="social-item">
+                <li class="social-item vk">
                   <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
                 </li>
               </ul>
