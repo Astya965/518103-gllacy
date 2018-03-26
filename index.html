@@ -11,9 +11,9 @@
 
 <body>
 
-  <input class="wrapper-toggle visually-hidden" type="radio" id="btn-1" name="toggle" checked>
-  <input class="wrapper-toggle visually-hidden" type="radio" id="btn-2" name="toggle">
-  <input class="wrapper-toggle visually-hidden" type="radio" id="btn-3" name="toggle">
+  <input class="wrapper-toggle visually-hidden" type="radio" id="wrapper-btn-1" name="toggle" checked>
+  <input class="wrapper-toggle visually-hidden" type="radio" id="wrapper-btn-2" name="toggle">
+  <input class="wrapper-toggle visually-hidden" type="radio" id="wrapper-btn-3" name="toggle">
 
   <div class="wrapper">
 
@@ -113,24 +113,24 @@
 
         <div class="main-slider">
           <div class="slider-controls">
-            <label for="btn-1"><span class="visually-hidden">Переключает на промо с крем-брюле и пломбиром с малиновым джемом</span></label>
-            <label for="btn-2"><span class="visually-hidden">Переключает на промо с шоколадным пломбиром и лимонным сорбетом</span></label>
-            <label for="btn-3"><span class="visually-hidden">Переключает на промо с пломбиром с помадкой и с клубничным щербетом</span></label>
+            <label for="wrapper-btn-1"><span class="visually-hidden">Переключает на промо с крем-брюле и пломбиром с малиновым джемом</span></label>
+            <label for="wrapper-btn-2"><span class="visually-hidden">Переключает на промо с шоколадным пломбиром и лимонным сорбетом</span></label>
+            <label for="wrapper-btn-3"><span class="visually-hidden">Переключает на промо с пломбиром с помадкой и с клубничным щербетом</span></label>
           </div>
-          <div class="slider-inner">
-            <div class="slider-item-1 slider-item">
-              <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
+          <ul class="slider-inner">
+            <li class="slider-item slide" id="slider-item-1">
+              <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</p>
               <a class="button slider-button" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider-item-2 slider-item hidden">
-              <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+            </li>
+            <li class="slider-item slide" id="slider-item-2">
+              <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
               <a class="button slider-button" href="#">Давайте оба!</a>
-            </div>
-            <div class="slider-item-3 slider-item hidden">
-              <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
+            </li>
+            <li class="slider-item slide" id="slider-item-3">
+              <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</p>
               <a class="button slider-button" href="#">Давайте оба!</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <section class="main-promo">
