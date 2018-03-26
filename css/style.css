@@ -86,7 +86,7 @@ a {
 .main-slider {
   position: relative;
   padding-top: 275px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   text-align: center;
   color: #ffffff;
 }
@@ -226,6 +226,7 @@ a {
   height: 64px;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
   margin-top: 5px;
   margin-left: 2px;
   margin-right: 10px;
@@ -515,6 +516,10 @@ a {
 
 /* Товары*/
 
+.popular-items {
+  margin-bottom: 40px;
+}
+
 .popular-items-list {
   display: flex;
   flex-flow: row wrap;
@@ -527,6 +532,23 @@ a {
   flex-flow: column-reverse nowrap;
   text-align: center;
   width: 267px;
+}
+
+.popular-item-inner {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.popular-item-inner::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-item-inner img {
@@ -560,6 +582,8 @@ a {
 }
 
 .item-price {
+  position: absolute;
+  bottom: 13px;
   margin: 0;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   font-size: 45px;
@@ -607,10 +631,59 @@ a {
 }
 
 .feature-item {
+  position: relative;
   width: 476px;
   padding-left: 57px;
   margin-right: 10px;
   margin-bottom: 25px;
+}
+
+.feature-quality::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-partners::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-natural::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/eco.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-delivery::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Новости */
@@ -1088,6 +1161,10 @@ a {
 
 /* Подвал - разметка */
 
+.main-footer {
+  margin-bottom: 20px;
+}
+
 .main-footer .container{
   display: flex;
   flex-flow: row nowrap;
@@ -1099,30 +1176,84 @@ a {
 /* Соцсети в подвале */
 
 .footer-social {
-  margin-top: 24px;
+  margin-top: 17px;
+  margin-left: 5px;
+  margin-bottom: 30px;
   width: 263px;
 }
 
 .social-list {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-start;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.social-button,
 .social-item {
-  width: 35px;
-  min-height: 35px;
+  position: relative;
+  width: 38px;
+  min-height: 38px;
   margin: 0;
-  margin-right: 14px;
+  margin-right: 10px;
   padding: 0;
-  background-color: #e6ebe9;
   border-radius: 50%;
 }
 
+.twitter::before,
+.instagram::before,
+.fb::before,
+.vk::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.twitter::before {
+  background-image: url("../img/twitter.svg");
+}
+
+.instagram::before {
+  background-image: url("../img/instagram.svg");
+}
+
+.fb::before {
+  background-image: url("../img/fb.svg");
+}
+.vk::before {
+  background-image: url("../img/vk.svg");
+}
+
+.twitter:hover::before,
+.instagram:hover::before,
+.fb:hover::before,
+.vk:hover::before {
+  opacity: 1;
+}
+
+.twitter:active:hover::before,
+.instagram:active::before,
+.fb:active::before,
+.vk:active::before {
+  opacity: 0.2;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+
 /* Навигация в подвале */
+
+.main-footer {
+  margin-bottom: 20px;
+}
 
 .footer-nav {
   width: 560px;
