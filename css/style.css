@@ -42,6 +42,7 @@ a {
 .container {
   width: 1150px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Общие стили кнопок */
@@ -55,33 +56,37 @@ a {
   padding:11px 23px 13px;
   color: #ffffff;
   vertical-align: top;
+  text-decoration: none;
+  border-radius: 50px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {
   color: #ffffff;
   border-radius: 50px;
-  box-shadow: 0 2px 2px #ac1000;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
   color: #ffffff;
   border-radius: 50px;
-  box-shadow: inset 0 2px 2px #942718;
-  background-color: rgba(0, 0, 0, 0.07);
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /* Слайдер*/
 
 .main-slider {
   position: relative;
-  padding-top: 321px;
+  padding-top: 275px;
+  margin-bottom: 40px;
   text-align: center;
   color: #ffffff;
 }
@@ -126,6 +131,14 @@ a {
 .slider-button:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
 }
 
 .slider-controls label {
@@ -173,40 +186,6 @@ a {
   background-image: url("../img/promo3.png");
 }
 
-/* margin-top: 28px;
-margin-bottom: 7px; */
-
-/* .slider-item-1 {
-  background-color: #849d8f;
-  background-image: url("../img/promo1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.slider-item-2 {
-  background-color: #8996a6;
-  background-image: url("../img/promo2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.slider-item-3 {
-  background-color: #9d8b84;
-  background-image: url("../img/promo3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.slider-item {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 496px;
-  width: 670px;
-  margin: 0 auto 35px;
-} */
-
 /* Центровщик внутри шапки */
 
 .main-header {
@@ -222,7 +201,7 @@ margin-bottom: 7px; */
   align-items: center;
   width: 1146px;
   margin: 0;
-  margin-top: 4px;
+  margin-top: 5px;
   padding: 0;
 }
 
@@ -275,24 +254,30 @@ margin-bottom: 7px; */
   margin: 0;
 }
 
-.nav-list a {
+.nav-list-element {
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 14px;
   padding-right: 13px;
   margin: 1px;
+}
+
+.nav-list a {
   color: #ffffff;
   border-bottom: 1px solid #a9bbb1;
 }
 
 .nav-list a:hover, .nav-list a:active {
   color: #333333;
+}
+
+.nav-list-element:hover, .nav-list-element:active {
   border-radius: 50px;
   border-bottom: none;
   background-color: #f7f6f3;
 }
 
-.nav-list a:active {
+.nav-list-element:active {
   border-top: 2px solid #696969;
   background-color: #f8f7f4;
 }
