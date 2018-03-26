@@ -14,6 +14,7 @@ a {
   text-decoration: none;
 }
 
+
 /* Центровщик */
 
 .container {
@@ -159,6 +160,8 @@ a {
   height: 64px;
   padding: 0;
   margin: 0;
+  margin-top: 5px;
+  margin-left: 2px;
   margin-right: 10px;
 }
 
@@ -220,7 +223,7 @@ a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 267px;
+  width: 263px;
 }
 
 .user-menu a {
@@ -233,7 +236,8 @@ a {
 .user-menu-element {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
   min-height: 32px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -245,12 +249,70 @@ a {
   margin-right: 1px;
 }
 
+/* .header-search::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+} */
+
+.header-search::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 17px;
+  height: 17px;
+  <object type="image/svg+xml" data="../img/loupe.svg"></object>
+}
+
+.header-search:hover {
+  background-color: #f8f7f4;
+}
+
+.header-search::before:hover {
+  fill: #000000;
+}
+
 .login-link {
   width: 93px;
+  box-sizing: border-box;
+  padding-right: 17px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .cart {
   width: 117px;
+  box-sizing: border-box;
+  padding-right: 34px;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Формы пользовательского меню в шапке */
@@ -1044,7 +1106,9 @@ a {
 
 /* Дополнительные настройки */
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
