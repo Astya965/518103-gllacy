@@ -1180,9 +1180,20 @@ a {
 }
 
 .breadcrums a {
+  position: relative;
   margin-right: 21px;
   color: #ffffff;
   border-bottom: 1px solid #a9bbb1;
+}
+
+.breadcrums a::after {
+  content: "»";
+  position: absolute;
+  right: -17px;
+  width: 10px;
+  height: 10px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
 }
 
 .breadcrums a:hover, .breadcrums a:active {
