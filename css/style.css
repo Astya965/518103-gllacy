@@ -519,27 +519,42 @@ a {
 
 /* Товары*/
 
-.popular-items {
-  margin-bottom: 40px;
-}
-
-.popular-items-list {
+.popular-items-list,
+.catalog-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
+}
+
+.catalog-item,
+.popular-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  min-height: 360px;
 }
 
 .catalog-item-link {
   display: flex;
-  flex-flow: column-reverse nowrap;
+  flex-flow: column nowrap;
   text-align: center;
-  width: 267px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  min-height: 405px;
+  border-radius: 5px;
 }
 
-.popular-item-inner {
-  position: relative;
-  margin-bottom: 9px;
+.catalog-item:hover .catalog-item-link,
+.catalog-item:focus .catalog-item-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
 }
 
 .popular-item-inner::before {
@@ -572,26 +587,26 @@ a {
 
 .catalog-item .button {
   display: none;
+  order: 2;
   width: 203px;
   margin: 0 auto;
 }
 
-.catalog-item {
-  margin-bottom: 45px;
-}
-
-.catalog-item:hover {
-  width: 296px;
-  height: 408px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+.catalog-item:hover .button,
+.catalog-item:focus .button {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
   z-index: 1;
 }
 
 .item-caption {
-  order: -1;
-  margin: 0;
+  max-width: 255px;
+  align-self: flex-start;
+  order: 1;
+  margin: 0 auto;
+  margin-top: 8px;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -599,7 +614,8 @@ a {
 
 .item-price {
   position: absolute;
-  bottom: 13px;
+  top: 209px;
+  left: 8px;
   margin: 0;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   font-size: 45px;
@@ -1226,18 +1242,6 @@ a {
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
-}
-
-/* Разметка каталога товаров */
-
-.catalog-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 1146px;
-  min-height: 1050px;
-  padding: 0;
-  align-content: space-between;
 }
 
 /* Пагинатор */
