@@ -17,7 +17,7 @@ a {
 .wrapper {
   margin: 0 auto;
   background-color: #849d8f;
-  background-image: url("img/slider-item1.png");
+  background-image: url("img/promo1.png");
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -30,11 +30,11 @@ a {
 }
 
 .site-wrapper::before {
-  background-image: url("img/slider-item2.png");
+  background-image: url("img/promo2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("img/slider-item3.png");
+  background-image: url("img/promo3.png");
 }
 
 /* Центровщик */
@@ -268,8 +268,9 @@ a {
   border-bottom: 1px solid #a9bbb1;
 }
 
-.nav-list a:hover, .nav-list a:active {
+.nav-list-element:hover a, .nav-list-element:active {
   color: #333333;
+  border-bottom: none;
 }
 
 .nav-list-element:hover, .nav-list-element:active {
@@ -309,11 +310,11 @@ a {
   color: #ffffff;
 }
 
-.user-menu a:hover {
+.login-link a:hover {
   color: #323232;
 }
 
-.user-menu-element {
+.user-menu-element .btn {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -323,13 +324,14 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.header-search {
+.header-search a {
   width: 33px;
+  min-height: 32px;
   border-radius: 50%;
   margin-right: 1px;
 }
 
-.header-search::before {
+.header-search a::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -341,12 +343,12 @@ a {
   background-position: 0 0;
 }
 
-.header-search:hover,
-.login-link:hover {
+.header-search a:hover,
+.login-link a:hover {
   background-color: #f8f7f4;
 }
 
-.header-search:hover::before {
+.header-search a:hover::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -358,13 +360,14 @@ a {
   background-position: 0 0;
 }
 
-.login-link {
+.login-link a{
   width: 93px;
+  min-height: 32px;
   box-sizing: border-box;
   padding-right: 17px;
 }
 
-.login-link::before {
+.login-link a::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -377,7 +380,7 @@ a {
 }
 
 
-.login-link:hover::before {
+.login-link a:hover::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -389,13 +392,14 @@ a {
   background-position: 0 0;
 }
 
-.cart {
+.cart a{
   width: 117px;
+  min-height: 32px;
   box-sizing: border-box;
   padding-right: 34px;
 }
 
-.cart::before {
+.cart a::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -403,6 +407,38 @@ a {
   width: 22px;
   height: 20px;
   background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Полная корзина */
+
+.full-cart a{
+  display: block;
+  position: relative;
+  width: 117px;
+  min-height: 32px;
+  box-sizing: border-box;
+  padding-right: 18px;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 25px;
+}
+
+.user-menu-element .full-cart-btn {
+  background-color: #f8f7f4;
+}
+
+.full-cart a::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -468,7 +504,7 @@ a {
 .main-promo {
   display: flex;
   justify-content: space-between;
-  margin: 0 2px 40px;
+  margin: 0 2px 32px;
 }
 
 .promo-item {
@@ -546,8 +582,9 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 297px;
   min-height: 405px;
+  padding-top: 8px;
   border-radius: 5px;
 }
 
@@ -577,7 +614,7 @@ a {
   color: #ffffff;
 }
 
-.popular-items a:hover, .catalog-list a:hover, .popular-items a:active, .catalog-list a:active {
+.item-caption:hover, .item-caption:active {
   color: #ffbc9e;
 }
 
@@ -968,28 +1005,6 @@ a {
 
 .form-wrapper .button {
   align-self: flex-end;
-}
-
-/* Полная корзина */
-
-.full-cart {
-  position: relative;
-  padding-right: 15px;
-  color: #323232;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  background-color: #f8f7f4;
-}
-
-.full-cart::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 20px;
-  background-image: url("../img/basket-red.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 /* Заголовок страницы каталога и фон каталога */
