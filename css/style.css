@@ -987,6 +987,13 @@ a {
   align-items: flex-end;
 }
 
+.catalog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 /* Сортировка в каталоге */
 
 .filters-form {
@@ -1246,36 +1253,67 @@ a {
 
 /* Пагинатор */
 
-.catalog {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-}
-
 .pagination-list {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
   width: 267px;
-  margin: 25px;
+  margin-top: 45px;
+  margin-right: 30px;
   margin-bottom: 25px;
   list-style: none;
 }
 
-.pagination-list a,
-.pagination-item {
-  width: 27px;
-  height: 26px;
-  margin-left: 2px;
+.pagination-list::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 140px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-left-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: rotate(180deg);
+}
+
+.pagination-list::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -23px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.pagination-list a {
+  display: inline-block;
+  width: 17px;
+  height: 22px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 5px 5px 0;
   color: #ffffff;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
+  vertical-align: top;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 .pagination-item-current a,
-.pagination-item-current {
+.pagination-list a:active {
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
