@@ -29,9 +29,9 @@
             </a>
             <ul class="nav-list">
               <li class="nav-list-element">
-                <a class="nav-catalog-list-link" href="#">Каталог</a>
-                <ul class="nav-submenu-list hidden">
-                  <li class="nav-submenu-list-element">
+                <a class="nav-list-link" href="#"><span class="nav-list-link-line">Каталог</span></a>
+                <ul class="nav-submenu-list">
+                  <li class="nav-submenu-list-element nav-submenu-list-element-new">
                     <a class="nav-submenu-list-link" href="#">Новинки</a>
                   </li>
                   <li class="nav-submenu-list-element">
@@ -49,10 +49,10 @@
                 </ul>
               </li>
               <li class="nav-list-element">
-                <a class="nav-list-link" href="#">Доставка и оплата</a>
+                <a class="nav-list-link" href="#"><span class="nav-list-link-line">Доставка и оплата</span></a>
               </li>
               <li class="nav-list-element">
-                <a class="nav-list-link" href="#">О Компании</a>
+                <a class="nav-list-link" href="#"><span class="nav-list-link-line">О Компании</span></a>
               </li>
             </ul>
           </nav>
@@ -60,7 +60,7 @@
           <div class="user-menu">
             <div class="header-search user-menu-element">
               <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
-              <div class="header-search-inner hidden">
+              <div class="header-search-inner">
                 <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="header-search" class="visually-hidden">Введите, что ищем?</label>
                   <input id="header-search" type="search" placeholder="Что ищем?">
@@ -69,17 +69,17 @@
             </div>
             <div class="login-link user-menu-element">
               <a class="btn btn-link" href="#">Вход</a>
-              <div class="login-inner hidden">
+              <div class="login-inner">
                 <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
                   <label for="user-login" class="visually-hidden">Введите свою электронную почту. Это объязательное поле для входа</label>
                   <input id="user-login" name="login" type="email" placeholder="Электронная почта" required>
                   <label for="user-password" class="visually-hidden">Введите свой пароль. Это объязательное поле для входа</label>
                   <input id="user-password" name="password" type="password" placeholder="Пароль" required>
-                  <div class="login-inner">
+                  <div class="login-inner-footer">
                     <button class="button" type="submit">Войти</button>
                     <div class="login-help">
-                      <a class="login-link" href="#">Забыли пароль?</a>
-                      <a class="login-link" href="#">Новая регистрация</a>
+                      <a class="login-footer-link" href="#">Забыли пароль?</a>
+                      <a class="login-footer-link" href="#">Новая регистрация</a>
                     </div>
                   </div>
                 </form>
