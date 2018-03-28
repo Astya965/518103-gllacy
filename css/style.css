@@ -1215,6 +1215,76 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Окно полной корзины */
+
+.cart-form {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 540px;
+  min-height: 242px;
+  padding-top: 20px;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,.6);
+  z-index: 100;
+}
+
+.cart-table {
+  display: table;
+}
+
+.cart-row {
+  display: table-row;
+  /* min-height: 40px;
+  margin-bottom: 10px; */
+}
+
+.cart-cell {
+  display: table-cell;
+}
+
+.cart-del {
+  width: 40px;
+}
+
+.cart-name {
+  width: 293px;
+  margin-left: 30px;
+}
+
+.cart-calculate {
+  width: 120px;
+}
+
+.cart-price {
+  width: 85px;
+}
+
+.modal-close {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 13px;
+  font-size: 0;
+  border: 0;
+  background-color: #f8f7f4;
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+/* .cart-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  min-height: 40px;
+  margin-bottom: 10px;
+} */
+
 /* Сортировка в каталоге */
 
 .filters-form {

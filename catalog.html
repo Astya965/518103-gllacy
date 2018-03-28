@@ -82,10 +82,10 @@
                 </div>
               </div>
               <div class="cart full-cart user-menu-element">
-                <a class="btn btn-cart full-cart-btn">
+                <div class="btn btn-cart full-cart-btn">
                   <span class="visually-hidden">Ваша корзина</span>
                   <span class="cart-elements">2 товара</span>
-                  <div class="cart-form hidden">
+                  <div class="cart-form">
                     <table class="cart-table">
                       <thead class="cart-caprions visually-hidden">
                         <tr>
@@ -97,34 +97,34 @@
                       </thead>
                       <tbody class="cart-inner">
                         <tr class="cart-row">
-                          <td class="cart-del">
+                          <td class="cart-del cart-cell">
                             <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
                           </td>
-                          <td class="cart-name">Пломбир с апельсиновым джемом</td>
-                          <td class="cart-calculate">1,5 кг х
+                          <td class="cart-name cart-cell">Пломбир с апельсиновым джемом</td>
+                          <td class="cart-calculate cart-cell">1,5 кг х
                             <span class="cart-start-price">200 руб.</span>
                           </td>
-                          <td class="cart-price">300 руб.</td>
+                          <td class="cart-price cart-cell">300 руб.</td>
                         </tr>
                         <tr class="cart-row">
-                          <td class="cart-del">
+                          <td class="cart-del cart-cell">
                             <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
                           </td>
-                          <td class="cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                          <td class="cart-calculate">1,5 кг х
+                          <td class="cart-name cart-cell">Клубничный пломбир с присыпкой из белого шоколада</td>
+                          <td class="cart-calculate cart-cell">1,5 кг х
                             <span class="cart-start-price">300 руб.</span>
                           </td>
-                          <td class="cart-price">450 руб.</td>
+                          <td class="cart-price cart-cell">450 руб.</td>
                         </tr>
                         <tr class="cart-row cart-row-total-price">
-                          <td colspan="4" class="cart-total-price"><strong>Итого: 750 руб.</strong></td>
+                          <td colspan="4" class="cart-total-price cart-cell"><strong>Итого: 750 руб.</strong></td>
                         </tr>
                       </tbody>
                     </table>
                     <button class="button" type="submit">Оформить заказ</button>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
 
           </div>
@@ -196,7 +196,7 @@
                   <label for="fatty-less10">до 10%</label>
                   <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
                   <label for="fatty-less30">до 30%</label>
-                  <input class="visually-hidden filter-toggle" ="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
                   <label for="fatty-more30">выше 30%</label>
                 </div>
               </fieldset>
@@ -357,8 +357,8 @@
               </li>
             </ul>
 
+            <h2 class="visually-hidden">Нумерация страниц:</h2>
             <ul class="pagination-list">
-              <h2 class="visually-hidden">Нумерация страниц:</h2>
               <li class="pagination-item pagination-item-current">
                 <a class="pagination-link first-pagination-link"><span class="visually-hidden">Вы находитесь на старнице</span>1</a>
               </li>
