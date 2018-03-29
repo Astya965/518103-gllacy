@@ -40,7 +40,7 @@ a {
 /* Центровщик */
 
 .container {
-  width: 1150px;
+  width: 1147px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -100,7 +100,7 @@ a {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -108,7 +108,10 @@ a {
 
 .slider-button {
   display: inline-block;
-  padding: 12px 44px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  padding-right: 44px;
   font-weight: 700;
   font-size: 31px;
   line-height: 41px;
@@ -201,7 +204,7 @@ a {
   align-items: center;
   width: 1146px;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   padding: 0;
 }
 
@@ -226,9 +229,8 @@ a {
   height: 64px;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
-  margin-top: 5px;
-  margin-left: 2px;
+  margin-top: 6px;
+  margin-left: -3px;
   margin-right: 10px;
 }
 
@@ -287,7 +289,7 @@ a {
   color: #333333;
 }
 
-.nav-list-element:hover .nav-list-link, .nav-list-element:active .nav-list-link{
+.nav-list-element:hover .nav-list-link {
   border-radius: 50px;
   background-color: #f7f6f3;
 }
@@ -299,11 +301,14 @@ a {
 
 .nav-list-element-current a{
   color: #ffffff;
+}
+
+.nav-list-element-current .nav-list-link{
   border-radius: 50px;
   background-color: #d07058;
 }
 
-.nav-list-element-current a {
+.nav-list-element-current .nav-list-link {
   border-bottom: none;
 }
 
@@ -388,6 +393,7 @@ a {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 263px;
+  margin-top: 2px;
 }
 
 .user-menu a {
@@ -421,13 +427,12 @@ a {
   width: 33px;
   min-height: 32px;
   border-radius: 50%;
-  margin-right: 1px;
 }
 
 .header-search a::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 8px;
   width: 17px;
   height: 17px;
@@ -581,6 +586,7 @@ a {
   min-height: 32px;
   box-sizing: border-box;
   padding-right: 34px;
+  margin-right: 1px;
 }
 
 .cart a::before {
@@ -671,6 +677,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+  margin-right: 1px;
   margin-bottom: 5px;
   padding: 0;
 }
@@ -687,7 +694,9 @@ a {
 .main-promo {
   display: flex;
   justify-content: space-between;
-  margin: 0 2px 32px;
+  margin-top: 0;
+  margin-right: 2px;
+  margin-bottom: 32px;
 }
 
 .promo-item {
@@ -695,7 +704,7 @@ a {
   min-height: 230px;
   color: #ffffff;
   font-weight: 700;
-  border-radius: 18px;
+  border-radius: 17px;
 }
 
 .promo-item a {
@@ -732,8 +741,12 @@ a {
 .promo-item .button {
   float: right;
   max-width: 180px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  padding-right: 24px;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 21px;
 }
 
 /* Товары*/
