@@ -1218,6 +1218,11 @@ a {
 /* Окно полной корзины */
 
 .cart-form {
+  display: none;
+}
+
+.full-cart-btn:hover .cart-form,
+.full-cart-btn:active .cart-form {
   display: flex;
   flex-flow: column wrap;
 
