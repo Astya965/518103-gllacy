@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Глобальные стили обертки */
 
 .wrapper {
@@ -23,8 +28,7 @@ a {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
+.site-wrapper::before, .site-wrapper::after {
   content: "";
   visibility: hidden;
 }
@@ -53,7 +57,7 @@ a {
   display: inline-block;
   font: inherit;
   text-align: center;
-  padding:11px 23px 13px;
+  padding: 11px 23px 13px;
   color: #ffffff;
   vertical-align: top;
   text-decoration: none;
@@ -162,29 +166,25 @@ a {
   display: none;
 }
 
-#wrapper-btn-1:checked ~ .wrapper #slider-item-1,
-#wrapper-btn-2:checked ~ .wrapper #slider-item-2,
-#wrapper-btn-3:checked ~ .wrapper #slider-item-3 {
+#wrapper-btn-1:checked~.wrapper #slider-item-1, #wrapper-btn-2:checked~.wrapper #slider-item-2, #wrapper-btn-3:checked~.wrapper #slider-item-3 {
   display: block;
 }
 
-#wrapper-btn-1:checked ~ .wrapper label[for="wrapper-btn-1"],
-#wrapper-btn-2:checked ~ .wrapper label[for="wrapper-btn-2"],
-#wrapper-btn-3:checked ~ .wrapper label[for="wrapper-btn-3"] {
+#wrapper-btn-1:checked~.wrapper label[for="wrapper-btn-1"], #wrapper-btn-2:checked~.wrapper label[for="wrapper-btn-2"], #wrapper-btn-3:checked~.wrapper label[for="wrapper-btn-3"] {
   background-color: #ffffff;
 }
 
-#wrapper-btn-1:checked ~ .wrapper {
+#wrapper-btn-1:checked~.wrapper {
   background-color: #849d8f;
   background-image: url("../img/promo1.png");
 }
 
-#wrapper-btn-2:checked ~ .wrapper {
+#wrapper-btn-2:checked~.wrapper {
   background-color: #8996a6;
   background-image: url("../img/promo2.png");
 }
 
-#wrapper-btn-3:checked ~ .wrapper {
+#wrapper-btn-3:checked~.wrapper {
   background-color: #9d8b84;
   background-image: url("../img/promo3.png");
 }
@@ -277,15 +277,14 @@ a {
 }
 
 .nav-list-link-line {
-  border-bottom: 1px solid rgba(255,255,255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.nav-list-element:hover .nav-list-link-line,
-.nav-list-element:active .nav-list-link-line {
+.nav-list-element:hover .nav-list-link-line, .nav-list-element:active .nav-list-link-line {
   border-bottom: none;
 }
 
-.nav-list-element:hover a, .nav-list-element:active a{
+.nav-list-element:hover a, .nav-list-element:active a {
   color: #333333;
 }
 
@@ -294,16 +293,16 @@ a {
   background-color: #f7f6f3;
 }
 
-.nav-list-element:active .nav-list-link{
+.nav-list-element:active .nav-list-link {
   border-top: 2px solid #696969;
   background-color: #f8f7f4;
 }
 
-.nav-list-element-current a{
+.nav-list-element-current a {
   color: #ffffff;
 }
 
-.nav-list-element-current .nav-list-link{
+.nav-list-element-current .nav-list-link {
   border-radius: 50px;
   background-color: #d07058;
 }
@@ -312,12 +311,11 @@ a {
   border-bottom: none;
 }
 
-.nav-submenu-list{
+.nav-submenu-list {
   display: none;
 }
 
-.nav-list-element:hover .nav-submenu-list,
-.nav-list-element:active .nav-submenu-list {
+.nav-list-element:hover .nav-submenu-list, .nav-list-element:active .nav-submenu-list {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -335,7 +333,7 @@ a {
   z-index: 1;
 }
 
-.nav-submenu-list a{
+.nav-submenu-list a {
   display: block;
   width: 143px;
   min-height: 26px;
@@ -369,7 +367,7 @@ a {
   padding: 0;
 }
 
-.nav-submenu-list-element-new a{
+.nav-submenu-list-element-new a {
   padding-top: 8px;
   padding-left: 19px;
   padding-bottom: 12px;
@@ -441,8 +439,7 @@ a {
   background-position: 0 0;
 }
 
-.header-search a:hover,
-.login-link a:hover {
+.header-search a:hover, .login-link a:hover {
   background-color: #f8f7f4;
 }
 
@@ -458,7 +455,7 @@ a {
   background-position: 0 0;
 }
 
-.header-search-inner{
+.header-search-inner {
   display: none;
 }
 
@@ -478,7 +475,7 @@ a {
   border-radius: 5px;
 }
 
-.header-search-form input[type="search"]{
+.header-search-form input[type="search"] {
   width: 312px;
   min-height: 43px;
   box-sizing: border-box;
@@ -487,7 +484,7 @@ a {
   padding-bottom: 2px;
 }
 
-.login-link a{
+.login-link a {
   width: 93px;
   min-height: 32px;
   box-sizing: border-box;
@@ -559,7 +556,7 @@ a {
 }
 
 .login-help {
-    width: 122px;
+  width: 122px;
 }
 
 .login-help a {
@@ -575,13 +572,12 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.login-help a:hover,
-.login-help a:active {
+.login-help a:hover, .login-help a:active {
   color: #e84d37;
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
-.cart a{
+.cart a {
   width: 117px;
   min-height: 32px;
   box-sizing: border-box;
@@ -603,7 +599,7 @@ a {
 
 /* Полная корзина */
 
-.full-cart-btn{
+.full-cart-btn {
   display: block;
   position: relative;
   width: 117px;
@@ -701,6 +697,9 @@ a {
 }
 
 .promo-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   width: 560px;
   min-height: 230px;
   color: #ffffff;
@@ -715,7 +714,7 @@ a {
 }
 
 .promo-caption {
-  margin: 16px 18px;
+  margin: 18px;
   font-size: 35px;
   line-height: 41px;
 }
@@ -740,7 +739,7 @@ a {
 }
 
 .promo-item .button {
-  float: right;
+  align-self: flex-end;
   max-width: 180px;
   padding-top: 10px;
   padding-bottom: 11px;
@@ -752,8 +751,7 @@ a {
 
 /* Товары*/
 
-.popular-items-list,
-.catalog-list {
+.popular-items-list, .catalog-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -761,8 +759,7 @@ a {
   margin: 0;
 }
 
-.catalog-item,
-.popular-item {
+.catalog-item, .popular-item {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
@@ -785,7 +782,7 @@ a {
   border-radius: 5px;
 }
 
-.catalog-item-link:hover::after {
+.catalog-item:hover .catalog-item-link::after {
   content: "";
   position: absolute;
   top: 0;
@@ -797,6 +794,7 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 1;
 }
+
 .popular-item-inner::before {
   content: "";
   position: absolute;
@@ -825,20 +823,18 @@ a {
   list-style: none;
 }
 
-.catalog-item .button {
+.catalog-button {
   display: none;
   order: 2;
   width: 201px;
   margin: 0 auto;
 }
 
-.catalog-item:hover .button,
-.catalog-item:focus .button {
+.catalog-item:hover .catalog-button, .catalog-item:focus .catalog-button {
   position: absolute;
-  display: block;
-  margin: 0 auto;
-  margin-top: 24px;
-  margin-left: 5px;
+  bottom: -24px;
+  left: 30px;
+  display: inline-block;
   z-index: 1;
 }
 
@@ -1121,7 +1117,7 @@ a {
   line-height: 24px;
 }
 
-.contacts .contacts-info:nth-child(1)  {
+.contacts .contacts-info:nth-child(1) {
   margin-top: 4px;
 }
 
@@ -1250,11 +1246,9 @@ a {
   background-color: #f8f7f4;
 }
 
-.full-cart-btn:hover .cart-form,
-.full-cart-btn:active .cart-form {
+.full-cart-btn:hover .cart-form, .full-cart-btn:active .cart-form {
   display: flex;
   flex-flow: column wrap;
-
   position: absolute;
   top: 35px;
   right: 0;
@@ -1265,7 +1259,7 @@ a {
   line-height: 16px;
   border-radius: 5px;
   background-color: #f8f7f4;
-  box-shadow: 0 20px 20px 0 rgba(0,0,0,.6);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .6);
   z-index: 100;
 }
 
@@ -1298,8 +1292,7 @@ a {
   padding-left: 32px;
 }
 
-.cart-name-1::before,
-.cart-name-2::before{
+.cart-name-1::before, .cart-name-2::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -1318,7 +1311,6 @@ a {
 .cart-name-2::before {
   background-image: url("../img/little-ic-2.jpg");
 }
-
 
 .cart-calculate {
   width: 135px;
@@ -1365,7 +1357,7 @@ a {
   left: 0px;
   width: 510px;
   height: 1px;
-  background-color:#cacac7;
+  background-color: #cacac7;
 }
 
 .cart-form .button {
@@ -1382,6 +1374,7 @@ a {
   white-space: nowrap;
   text-align: center;
 }
+
 /* Сортировка в каталоге */
 
 .filters-form {
@@ -1402,8 +1395,7 @@ a {
   border: 0;
 }
 
-.sorting-select,
-.filter-item-inner {
+.sorting-select, .filter-item-inner {
   line-height: 18px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1422,6 +1414,12 @@ a {
   padding: 7px 10px 9px;
   margin: 0;
   color: #ffffff;
+}
+
+.sorting-select option {
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .filter-item-inner {
@@ -1479,7 +1477,7 @@ a {
   left: 132px;
 }
 
-.filter-item-inner label{
+.filter-item-inner label {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -1488,8 +1486,7 @@ a {
   user-select: none;
 }
 
-.fatty-inner,
-.filler-inner {
+.fatty-inner, .filler-inner {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -1497,8 +1494,7 @@ a {
   width: 415px;
 }
 
-.filter-toggle + label::before,
-.filter-toggle:checked + label::after {
+.filter-toggle+label::before, .filter-toggle:checked+label::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -1511,8 +1507,7 @@ a {
   opacity: 0.8;
 }
 
-.filter-checkbox + label::before,
-.filter-checkbox:checked + label::after {
+.filter-checkbox+label::before, .filter-checkbox:checked+label::after {
   content: "";
   position: absolute;
   top: -1px;
@@ -1525,29 +1520,27 @@ a {
   opacity: 0.8;
 }
 
-.filter-toggle + label::before {
+.filter-toggle+label::before {
   background-image: url("../img/radio-off.svg");
 }
 
-.filter-toggle:checked + label::after {
+.filter-toggle:checked+label::after {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-checkbox + label::before {
+.filter-checkbox+label::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-checkbox:checked + label::after {
+.filter-checkbox:checked+label::after {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-toggle + label:hover::before,
-.filter-checkbox + label:hover::before {
+.filter-toggle+label:hover::before, .filter-checkbox+label:hover::before {
   opacity: 1;
 }
 
-.filter-toggle + label:disabled::before,
-.filter-checkbox + label:disabled::before {
+.filter-toggle+label:disabled::before, .filter-checkbox+label:disabled::before {
   opacity: 0.4;
 }
 
@@ -1572,7 +1565,6 @@ a {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 
 .filter-button:hover {
   color: #323232;
@@ -1678,15 +1670,13 @@ a {
   vertical-align: top;
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus {
+.pagination-list a:hover, .pagination-list a:focus {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
-.pagination-item-current a,
-.pagination-list a:active {
+.pagination-item-current a, .pagination-list a:active {
   color: #323232;
   background-color: #ffffff;
   border-radius: 50%;
@@ -1730,21 +1720,18 @@ a {
   border-radius: 50%;
 }
 
-.twitter::before,
-.instagram::before,
-.fb::before,
-.vk::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 32px;
-    height: 33px;
-    opacity: 0.8;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.twitter::before, .instagram::before, .fb::before, .vk::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 32px;
+  height: 33px;
+  opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .twitter::before {
@@ -1758,25 +1745,19 @@ a {
 .fb::before {
   background-image: url("../img/fb.svg");
 }
+
 .vk::before {
   background-image: url("../img/vk.svg");
 }
 
-.twitter:hover::before,
-.instagram:hover::before,
-.fb:hover::before,
-.vk:hover::before {
+.twitter:hover::before, .instagram:hover::before, .fb:hover::before, .vk:hover::before {
   opacity: 1;
 }
 
-.twitter:active:hover::before,
-.instagram:active::before,
-.fb:active::before,
-.vk:active::before {
+.twitter:active:hover::before, .instagram:active::before, .fb:active::before, .vk:active::before {
   opacity: 0.2;
   border: 4px solid rgba(255, 255, 255, 0.1);
 }
-
 
 /* Навигация в подвале */
 
@@ -1861,8 +1842,7 @@ a {
   color: #ffbc9e;
 }
 
-.copyright-logo {
-}
+.copyright-logo {}
 
 .copyright-description {
   margin: 0;
@@ -1874,9 +1854,7 @@ a {
 
 /* Дополнительные настройки */
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
