@@ -1231,44 +1231,80 @@ img {
 /* Модальное окно */
 
 .form-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+
+  width: 435px;
+  min-height: 396px;
+  margin: 0 auto;
+  padding: 25px;
+  padding-top: 15px;
+  padding-left: 23px;
+  padding-right: 17px;
+
   background-color: #f8f7f4;
   border-radius: 10px;
+
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper .feedback-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+
+  background-color: inherit;
+  background-image: url("../img/cross-big.svg");
 }
 
 .feedback-caption {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
 }
 
-/* Модельное окно - форма */
-
-.form-wrapper {
+.feedback-form {
   display: flex;
   flex-flow: column wrap;
-  width: 481px;
-  min-height: 445px;
-  margin: 0 auto;
-  padding: 25px;
-
-  background-color: #f8f7f4;
-  border-radius: 15px;
 }
 
 .feedback-form input {
   box-sizing: border-box;
-  width: 270px;
-  min-height: 47px;
-  margin-bottom: 17px;
-  padding: 18px 17px 13px;
+  width: 265px;
+  min-height: 40px;
+  margin-bottom: 20px;
+  padding: 9px 12px 9px;
 }
 
 .feedback-form textarea {
-  width: 431px;
-  min-height: 158px;
+  width: 410px;
+  min-height: 140px;
   margin-bottom: 23px;
-  padding: 15px;
-  padding-left: 17px;
+  padding-top: 10px;
+  padding-left: 12px;
 }
 
 .feedback-form input, .feedback-form textarea {
@@ -1302,14 +1338,10 @@ img {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
-.modal-close {
-  align-self: flex-end;
-  width: 18px;
-  min-height: 17px;
-}
-
 .form-wrapper .button {
   align-self: flex-end;
+  width: 141px;
+  margin-right: 5px;
 }
 
 /* Заголовок страницы каталога и фон каталога */
@@ -2036,7 +2068,7 @@ img {
   padding: 0;
 
   border: 0;
-  
+
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
