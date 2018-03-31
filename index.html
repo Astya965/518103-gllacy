@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -232,6 +233,7 @@
 
       <section class="main-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522513563335" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="main-map-inner">
           <div class="contacts">
             <p class="contacts-description">Адрес главного офиса <br> и офлайн-магазина:<span class="contacts-info">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
@@ -300,14 +302,76 @@
         <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
         <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
         <label class="visually-hidden" for="feedback-email">Ваша почта для ответа? Объязательное поле</label>
-        <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+        <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
         <label class="visually-hidden" for="feedback-textarea">Напишите что-нибудь...</label>
-        <textarea id="feedback-textarea" placeholder="Напишите что-нибудь..." required></textarea>
+        <textarea id="feedback-textarea" name="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
         <button class="button" type="submit">Отправить</button>
       </form>
     </div>
   </section>
   <div class="modal-overlay"></div>
+
+  <script>
+    var link = document.querySelector(".js-button");
+
+    var popup = document.querySelector(".form-wrapper");
+    var close = popup.querySelector(".feedback-modal-close");
+
+    var form = popup.querySelector("form");
+    var email = popup.querySelector("[name=feedback-email]");
+    var message = popup.querySelector("[name=feedback-textarea]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+    storage = localStorage.getItem("email");
+    } catch (err) {
+    isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+
+    if (storage) {
+      email.value = storage;
+      message.focus();
+    } else {
+      email.focus();
+    }
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!email.value || !message.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+      console.log("Нужно ввести почту для ответа и ваше сообщение");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("email", email.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+  </script>
 
 </body>
 
