@@ -590,14 +590,20 @@ img {
   background-position: 0 0;
 }
 
+.header-search,
+.login-link,
+.full-cart-btn {
+  position: relative;
+}
+
 .header-search-inner {
   display: none;
 }
 
 .header-search:hover .header-search-inner {
   position: absolute;
-  top: 60px;
-  right: 602px;
+  top: 36px;
+  right: 2px;
 
   display: block;
   width: 310px;
@@ -665,8 +671,8 @@ img {
 
 .login-link:hover .login-inner {
   position: absolute;
-  top: 60px;
-  right: 498px;
+  top: 36px;
+  right: 0px;
   z-index: 1;
 
   display: block;
@@ -1478,7 +1484,7 @@ img {
 
 /* Модальное окно */
 
-.form-wrapper {
+/* .form-wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1512,7 +1518,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .form-wrapper .feedback-modal-close {
   position: absolute;
