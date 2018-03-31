@@ -2347,6 +2347,8 @@ img {
   padding: 0;
 
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .twitter::before, .instagram::before, .fb::before, .vk::before {
