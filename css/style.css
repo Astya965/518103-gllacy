@@ -1492,11 +1492,13 @@ img {
 
 /* Модальное окно */
 
-/* .form-wrapper {
+.form-wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1000;
+
+  display: none;
 
   width: 435px;
   min-height: 396px;
@@ -1522,11 +1524,12 @@ img {
   left: 0;
   z-index: 999;
 
-  display: block;
+  display: none;
+  /* display: block; */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-} */
+}
 
 .feedback-modal-close {
   position: absolute;
