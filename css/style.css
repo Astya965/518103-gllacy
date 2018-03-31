@@ -2203,6 +2203,7 @@ img {
 
 .breadcrums a:hover, .breadcrums a:active {
   color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 155, 0.3);
 }
 
 /* Пагинатор */
