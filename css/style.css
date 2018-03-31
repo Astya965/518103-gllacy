@@ -1575,7 +1575,9 @@ img {
 
 .modal-show {
   display: block;
+}
 
+.form-wrapper.modal-show {
   animation: bounce 0.6s;
 }
 
