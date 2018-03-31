@@ -979,9 +979,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -1006,6 +1004,11 @@ img {
           align-items: center;
   width: 267px;
   min-height: 358px;
+  margin-right: 26px;
+}
+
+.catalog-item:nth-child(4n), .popular-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item-link {
