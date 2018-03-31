@@ -2,6 +2,7 @@
   var link = document.querySelector(".js-button");
 
   var popup = document.querySelector(".form-wrapper");
+  var overlay = document.querySelector(".modal-overlay");
   var close = popup.querySelector(".feedback-modal-close");
 
   var form = popup.querySelector("form");
@@ -20,6 +21,7 @@
   link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  overlay.classList.add("modal-show");
 
   if (storage) {
     email.value = storage;
@@ -33,6 +35,7 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
+  overlay.classList.remove("modal-show");
 });
 
 form.addEventListener("submit", function (evt) {
