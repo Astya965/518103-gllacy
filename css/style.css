@@ -1692,6 +1692,10 @@ img {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
+.feedback-form textarea:hover {
+  margin-bottom: 21px;
+}
+
 .feedback-form input:active, .feedback-form textarea:active {
   font: inherit;
 
