@@ -979,6 +979,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0;
   margin: 0;
@@ -1782,7 +1784,6 @@ img {
 }
 
 .cart-table {
-  display: table;
   width: 514px;
   margin: 0;
   margin-left: 13px;
@@ -1790,13 +1791,10 @@ img {
 }
 
 .cart-row {
-  display: table-row;
-
   vertical-align: top;
 }
 
 .cart-cell {
-  display: table-cell;
   padding-top: 5px;
   padding-bottom: 25px;
 }
