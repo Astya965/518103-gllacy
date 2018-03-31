@@ -685,16 +685,6 @@ img {
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.user-form input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 242px;
-  height: 43px;
-  margin-bottom: 20px;
-  padding-left: 14px;
-  padding-bottom: 3px;
-}
-
 .login-inner-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,15 +792,24 @@ img {
 /* Формы пользовательского меню в шапке */
 
 .header-search-form input, .user-form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 242px;
+  height: 43px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 14px;
+  padding-bottom: 3px;
+
   font: inherit;
-  color: #323232;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  color: #323232;
 
   background-color: #ffffff;
-  border-radius: 5px;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .header-search-form input::-webkit-input-placeholder, .user-form input::-webkit-input-placeholder {
@@ -1111,9 +1110,14 @@ img {
   line-height: 22px;
 }
 
-.item-caption:hover,
-.item-caption:active {
+.item-caption span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.item-caption span:hover,
+.item-caption span:active {
   color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 155, 0.3);
 }
 
 .item-price {
@@ -1275,10 +1279,12 @@ img {
 
 .news a {
   color: #323232;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .news a:hover, .news a:active {
   color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 155, 0.3);
 }
 
 .news-caption {
@@ -1426,6 +1432,12 @@ img {
   background-image: url("../img/map.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main-map iframe {
+  width: 1200px;
+  height: 430px;
+  border: 0;
 }
 
 .contacts {
