@@ -294,10 +294,6 @@ img {
   padding: 0;
 }
 
-.hidden {
-  display: none;
-}
-
 /* Навигация в шапке сайта */
 
 .main-header-logo {
@@ -593,7 +589,7 @@ img {
 
 .header-search,
 .login-link,
-.full-cart-btn {
+.full-cart {
   position: relative;
 }
 
@@ -767,10 +763,9 @@ img {
 
 /* Полная корзина */
 
-.full-cart-btn {
+.user-menu-element.full-cart a{
   position: relative;
 
-  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 117px;
@@ -780,17 +775,17 @@ img {
 
   font-size: 14px;
   font-weight: 500;
-  color: #323232;
   line-height: 16px;
 
+  background-color: #f8f7f4;
   border-radius: 25px;
 }
 
-.user-menu-element .full-cart-btn {
-  background-color: #f8f7f4;
+.user-menu-element.full-cart a {
+  color: #323232;
 }
 
-.full-cart-btn::before {
+.user-menu-element.full-cart a::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -1262,7 +1257,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .news-and-mailing-item {
@@ -1741,7 +1736,7 @@ img {
   background-color: #f8f7f4;
 }
 
-.full-cart-btn:hover .cart-form, .full-cart-btn:active .cart-form {
+.full-cart:hover .cart-form, .full-cart:active .cart-form {
   position: absolute;
   top: 35px;
   right: 0;
@@ -2386,7 +2381,7 @@ img {
 /* Навигация в подвале */
 
 .main-footer {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .footer-nav {
@@ -2476,7 +2471,7 @@ img {
 /* Копирайт */
 
 .footer-copyright {
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .footer-copyright a {
@@ -2512,6 +2507,10 @@ img {
   overflow: hidden;
 }
 
+
+_:-ms-fullscreen, :root label.visually-hidden {
+  display:none; /* IE11 */
+}
 
 _:-ms-fullscreen, :root label.visually-hidden {
   display:none; /* IE11 */
