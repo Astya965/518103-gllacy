@@ -1525,10 +1525,13 @@ img {
   z-index: 999;
 
   display: none;
-  /* display: block; */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-show {
+  display: block;
 }
 
 .feedback-modal-close {
@@ -2468,7 +2471,6 @@ img {
 }
 
 
-input:active .visually-hidden,
-input:focus .visually-hidden{
-  display: none;
+_:-ms-fullscreen, :root label.visually-hidden {
+  display:none; /* IE11 */
 }
