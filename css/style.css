@@ -956,6 +956,7 @@ img {
       align-self: flex-end;
 
   max-width: 180px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: 21px;
   padding-top: 10px;
@@ -1345,6 +1346,7 @@ img {
 
 .mailing-inner .button {
   margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .mailing-form input {
@@ -2267,44 +2269,10 @@ outline: #fff solid 1px;
           align-items: center;
   width: 267px;
   margin-top: 47px;
-  margin-right: 25px;
+  margin-right: -8px;
   margin-bottom: 30px;
 
   list-style: none;
-}
-
-.pagination-list::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 141px;
-
-  width: 8px;
-  height: 12px;
-
-  background-image: url("../img/icon-left-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  -webkit-transform: rotate(180deg);
-
-      -ms-transform: rotate(180deg);
-
-          transform: rotate(180deg);
-}
-
-.pagination-list::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  right: -24px;
-
-  width: 8px;
-  height: 12px;
-
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .pagination-list a {
@@ -2334,6 +2302,29 @@ outline: #fff solid 1px;
 
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+
+.pagination-list .pagination-link-back {
+  margin-right: 5px;
+
+  background-image: url("../img/icon-left-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  -webkit-transform: rotate(180deg);
+
+      -ms-transform: rotate(180deg);
+
+          transform: rotate(180deg);
+}
+
+.pagination-list .pagination-link-enter {
+  margin-left: 5px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 /* Подвал - разметка */
@@ -2429,9 +2420,10 @@ outline: #fff solid 1px;
   opacity: 1;
 }
 
-.twitter:active:hover::before, .instagram:active::before, .fb:active::before, .vk:active::before {
-  border: 4px solid rgba(255, 255, 255, 0.1);
-  opacity: 0.2;
+.twitter:active::before, .instagram:active::before, .fb:active::before, .vk:active::before {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0px 1px 1px #888888;
+  opacity: 0.7;
 }
 
 /* Навигация в подвале */
@@ -2505,7 +2497,7 @@ outline: #fff solid 1px;
 
 .partners {
   position: relative;
-  margin: -12px;
+  margin-right: -12px;
 
   font-weight: 700;
 }
@@ -2514,7 +2506,7 @@ outline: #fff solid 1px;
   content: "";
   position: absolute;
   top: 2px;
-  left: -22px;
+  right: 115px;
 
   width: 18px;
   height: 18px;
