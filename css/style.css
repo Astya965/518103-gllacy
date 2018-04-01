@@ -1983,6 +1983,8 @@ img {
 
 .sorting-select:hover {
   color: #000000;
+
+  background-image: url("../img/select-arrow-push.svg");
 }
 
 .sorting-select option {
