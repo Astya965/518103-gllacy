@@ -2144,6 +2144,14 @@ img {
   opacity: 0.4;
 }
 
+.filter-checkbox:focus+label {
+outline: #fff solid 1px;
+}
+
+.filter-toggle:focus+label {
+outline: #fff solid 1px;
+}
+
 .filler-inner {
   position: relative;
 
@@ -2556,6 +2564,6 @@ img {
 }
 
 
-_:-ms-fullscreen, :root label.visually-hidden {
+:-ms-fullscreen, :root label.visually-hidden {
   display:none; /* IE11 */
 }
