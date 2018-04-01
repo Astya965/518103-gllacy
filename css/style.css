@@ -836,6 +836,8 @@ img {
 }
 
 .header-search-form input:hover, .user-form input:hover {
+  padding-left: 13px;
+
   font: inherit;
 
   border: 2px solid rgba(154, 154, 154, 0.52);
@@ -915,6 +917,7 @@ img {
   font-weight: 700;
   color: #ffffff;
 
+  background-size: cover;
   border-radius: 17px;
 }
 
@@ -940,15 +943,11 @@ img {
 .promo-item.promo-item-raspberry {
   background-color: #6c2231;
   background-image: url("../img/background-raspberry.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .promo-item.promo-item-chocolate {
   background-color: #41281c;
   background-image: url("../img/background-chocolate.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .promo-item .button {
@@ -1411,6 +1410,8 @@ img {
 }
 
 .mailing-form input:hover {
+  padding-left: 14px;
+
   font: inherit;
 
   border: 2px solid rgba(154, 154, 154, 0.52);
@@ -1684,6 +1685,8 @@ img {
 }
 
 .feedback-form input:hover, .feedback-form textarea:hover {
+  padding-left: 11px;
+
   font: inherit;
 
   border: 2px solid rgba(154, 154, 154, 0.52);
