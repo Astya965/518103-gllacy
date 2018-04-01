@@ -885,6 +885,10 @@ img {
   line-height: 24px;
 }
 
+.tel a {
+  color: #ffffff;
+}
+
 /* Промо */
 
 .main-promo {
@@ -1492,6 +1496,10 @@ img {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.contacts-info a {
+  color: #ffffff;
 }
 
 .contacts .contacts-info:nth-child(1) {
