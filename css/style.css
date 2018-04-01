@@ -617,16 +617,6 @@ img {
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.header-search-form input[type="search"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 312px;
-  min-height: 43px;
-  padding: 0px;
-  padding-left: 14px;
-  padding-bottom: 2px;
-}
-
 .login-link a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -798,7 +788,7 @@ img {
   width: 242px;
   height: 43px;
   margin-bottom: 20px;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-left: 14px;
   padding-bottom: 3px;
 
@@ -811,6 +801,10 @@ img {
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.header-search-form input[type="search"] {
+  width: 312px;
 }
 
 .header-search-form input::-webkit-input-placeholder, .user-form input::-webkit-input-placeholder {
