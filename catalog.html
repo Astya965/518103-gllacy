@@ -18,7 +18,6 @@
       <header class="main-header">
 
         <div class="upper-main-header">
-
           <nav class="site-navigation">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
@@ -83,53 +82,49 @@
             </div>
             <div class="full-cart user-menu-element">
               <a class="btn btn-cart full-cart-btn" href="#"><span class="visually-hidden">Ваша корзина</span><span class="cart-elements">2 товара</span></a>
-              <div class="full-cart-inner">
-                <div class="cart-form">
-                  <table class="cart-table">
-                    <thead class="cart-caprions visually-hidden">
-                      <tr>
-                        <th scope="col">Удаление товаров из корзины</th>
-                        <th scope="col">Название товара</th>
-                        <th scope="col">Вес товара и цена за килограмм</th>
-                        <th scope="col">Итоговая цена товара</th>
-                      </tr>
-                    </thead>
-                    <tbody class="cart-inner">
-                      <tr class="cart-row">
-                        <td class="cart-del cart-cell">
-                          <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
-                        </td>
-                        <td class="cart-name cart-name-1 cart-cell">Пломбир с апельсиновым джемом</td>
-                        <td class="cart-calculate cart-cell">1,5 кг х
-                          <span class="cart-start-price">200 руб.</span>
-                        </td>
-                        <td class="cart-price cart-cell">300 руб.</td>
-                      </tr>
-                      <tr class="cart-row">
-                        <td class="cart-del cart-cell">
-                          <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
-                        </td>
-                        <td class="cart-name cart-name-2 cart-cell">Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td class="cart-calculate cart-cell">1,5 кг х
-                          <span class="cart-start-price">300 руб.</span>
-                        </td>
-                        <td class="cart-price cart-cell">450 руб.</td>
-                      </tr>
-                      <tr class="cart-row cart-row-total-price">
-                        <td class="cart-total-price cart-cell" colspan="4" ><strong>Итого: 750 руб.</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <button class="button" type="submit">Оформить заказ</button>
-                </div>
+              <div class="cart-form full-cart-inner">
+                <table class="cart-table">
+                  <thead class="cart-caprions visually-hidden">
+                    <tr>
+                      <th scope="col">Удаление товаров из корзины</th>
+                      <th scope="col">Название товара</th>
+                      <th scope="col">Вес товара и цена за килограмм</th>
+                      <th scope="col">Итоговая цена товара</th>
+                    </tr>
+                  </thead>
+                  <tbody class="cart-inner">
+                    <tr class="cart-row">
+                      <td class="cart-del cart-cell">
+                        <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
+                      </td>
+                      <td class="cart-name cart-name-1 cart-cell">Пломбир с апельсиновым джемом</td>
+                      <td class="cart-calculate cart-cell">1,5 кг х
+                        <span class="cart-start-price">200 руб.</span>
+                      </td>
+                      <td class="cart-price cart-cell">300 руб.</td>
+                    </tr>
+                    <tr class="cart-row">
+                      <td class="cart-del cart-cell">
+                        <button class="modal-close" type="button"><span class="visually-hidden">Удалить данный товар из корзины</span>x</button>
+                      </td>
+                      <td class="cart-name cart-name-2 cart-cell">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="cart-calculate cart-cell">1,5 кг х
+                        <span class="cart-start-price">300 руб.</span>
+                      </td>
+                      <td class="cart-price cart-cell">450 руб.</td>
+                    </tr>
+                    <tr class="cart-row cart-row-total-price">
+                      <td class="cart-total-price cart-cell" colspan="4" ><strong>Итого: 750 руб.</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="button" type="submit">Оформить заказ</button>
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="downer-main-header">
-
           <div class="breadcrums-header">
             <ul class="breadcrums">
               <li class="breadcrums-item">
@@ -178,9 +173,9 @@
                   <div class="filter-ring ring-min"></div>
                   <div class="filter-ring ring-max"></div>
                   <div class="price-filter-counter visually-hidden">
-                    <label for="price-filter-min"></label>
+                    <label for="price-filter-min" tabindex="0"></label>
                     <input type="number" id="price-filter-min" name="price-filter-min" value="100" placeholder="0">
-                    <label for="price-filter-max"></label>
+                    <label for="price-filter-max" tabindex="0"></label>
                     <input type="number" id="price-filter-max" name="price-filter-max" value="500" placeholder="10000">
                   </div>
                 </div>
@@ -190,28 +185,28 @@
               <legend class="filter-caption">Жирность:</legend>
               <div class="fatty-inner filter-item-inner">
                 <input class="visually-hidden filter-toggle" type="radio" id="fatty-0" name="fatty-toggle" value="0%">
-                <label for="fatty-0">0%</label>
+                <label for="fatty-0" tabindex="0">0%</label>
                 <input class="visually-hidden filter-toggle" type="radio" id="fatty-less10" name="fatty-toggle" value="less10%" checked>
-                <label for="fatty-less10">до 10%</label>
+                <label for="fatty-less10" tabindex="0">до 10%</label>
                 <input class="visually-hidden filter-toggle" type="radio" id="fatty-less30" name="fatty-toggle" value="less30%">
-                <label for="fatty-less30">до 30%</label>
+                <label for="fatty-less30" tabindex="0">до 30%</label>
                 <input class="visually-hidden filter-toggle" type="radio" id="fatty-more30" name="fatty-toggle" value="more30%">
-                <label for="fatty-more30">выше 30%</label>
+                <label for="fatty-more30" tabindex="0">выше 30%</label>
               </div>
             </fieldset>
             <fieldset class="filter-item">
               <legend class="filter-caption">Наполнители:</legend>
               <div class="filler-inner filter-item-inner">
                 <input class="visually-hidden filter-checkbox" type="checkbox" id="fillers-chocolate" name="filler" value="chocolate" checked>
-                <label for="fillers-chocolate">шоколадные</label>
+                <label for="fillers-chocolate" tabindex="0">шоколадные</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" id="fillers-sugar" name="filler" value="sugar" checked>
-                <label for="fillers-sugar">сахарные присыпки</label>
+                <label for="fillers-sugar" tabindex="0">сахарные присыпки</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" id="fillers-fruits" name="filler" value="fruits">
-                <label for="fillers-fruits">фрукты</label>
+                <label for="fillers-fruits" tabindex="0">фрукты</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" id="fillers-syrup" name="filler" value="syrup">
-                <label for="fillers-syrup">сиропы</label>
+                <label for="fillers-syrup" tabindex="0">сиропы</label>
                 <input class="visually-hidden filter-checkbox" type="checkbox" id="fillers-jam" name="filler" value="jam">
-                <label for="fillers-jam">джемы</label>
+                <label for="fillers-jam" tabindex="0">джемы</label>
               </div>
             </fieldset>
             <button class="filter-button" type="submit">Применить</button>

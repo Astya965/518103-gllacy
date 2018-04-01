@@ -21,10 +21,11 @@ img {
 /* Глобальные стили обертки */
 
 .wrapper {
+  min-width: 1200px;
   margin: 0 auto;
 
   background-color: #849d8f;
-  background-image: url("img/promo1.png");
+  background-image: url("../img/promo1.png");
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -41,17 +42,17 @@ img {
 }
 
 .site-wrapper::before {
-  background-image: url("img/promo2.png");
+  background-image: url("../img/promo2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("img/promo3.png");
+  background-image: url("../img/promo3.png");
 }
 
 /* Центровщик */
 
 .container {
-  width: 1147px;
+  width: 1146px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -1954,13 +1955,34 @@ img {
 }
 
 .sorting-select {
-  width: 195px;
+  width: 192px;
   min-height: 37px;
 
   margin: 0;
-  padding: 7px 10px 9px;
+  padding: 7px 15px 9px;
 
   color: #ffffff;
+
+  border: none;
+  border-radius: 19px;
+  overflow: hidden;
+
+  -webkit-appearance: none;
+    -moz-appearance: none;
+      appearance: none;
+
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 165px 12px;
+  background-size: 11px 11px;
+}
+
+.filters-form select::-ms-expand {
+  display: none;  /* IE11 */
+}
+
+.sorting-select:hover {
+  color: #000000;
 }
 
 .sorting-select option {
@@ -2020,6 +2042,12 @@ img {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
           box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
+  cursor: pointer;
+}
+
+.filter-ring:hover {
+  border: 9px solid #ffffff;
 
   cursor: pointer;
 }
@@ -2531,10 +2559,6 @@ img {
   overflow: hidden;
 }
 
-
-_:-ms-fullscreen, :root label.visually-hidden {
-  display:none; /* IE11 */
-}
 
 _:-ms-fullscreen, :root label.visually-hidden {
   display:none; /* IE11 */

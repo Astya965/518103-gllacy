@@ -22,7 +22,6 @@
       <header class="main-header">
 
         <div class="upper-main-header">
-
           <nav class="site-navigation">
             <a class="main-header-logo">
               <img src="img/logo.svg" width="156" height="64" alt="Логотип сайта мороженного Глейси">
@@ -56,13 +55,12 @@
               </li>
             </ul>
           </nav>
-
           <div class="user-menu">
             <div class="header-search user-menu-element">
               <a class="btn btn-search" href="#"><span class="visually-hidden">Поиск</span></a>
               <div class="header-search-inner">
                 <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-                  <label class="visually-hidden" for="header-search" >Введите, что ищем?</label>
+                  <label class="visually-hidden" for="header-search" tabindex="0">Введите, что ищем?</label>
                   <input type="search" id="header-search" placeholder="Что ищем?">
                 </form>
               </div>
@@ -71,9 +69,9 @@
               <a class="btn btn-link" href="#">Вход</a>
               <div class="login-inner">
                 <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="user-login" >Введите свою электронную почту. Это обязательное поле для входа</label>
+                  <label class="visually-hidden" for="user-login" tabindex="0">Введите свою электронную почту. Это обязательное поле для входа</label>
                   <input type="email" id="user-login" name="login" placeholder="Электронная почта" required>
-                  <label class="visually-hidden" for="user-password" >Введите свой пароль. Это обязательное поле для входа</label>
+                  <label class="visually-hidden" for="user-password" tabindex="0">Введите свой пароль. Это обязательное поле для входа</label>
                   <input type="password" id="user-password" name="password" placeholder="Пароль" required>
                   <div class="login-inner-footer">
                     <button class="button" type="submit">Войти</button>
@@ -89,7 +87,6 @@
               <a class="btn btn-cart" href="#"><span class="visually-hidden">Ваша корзина</span><span class="cart-inner">Пусто</span></a>
             </div>
           </div>
-
         </div>
 
         <div class="contact-description">
@@ -109,9 +106,9 @@
 
         <div class="main-slider">
           <div class="slider-controls">
-            <label for="wrapper-btn-1"><span class="visually-hidden">Переключает на промо с крем-брюле и пломбиром с малиновым джемом</span></label>
-            <label for="wrapper-btn-2"><span class="visually-hidden">Переключает на промо с шоколадным пломбиром и лимонным сорбетом</span></label>
-            <label for="wrapper-btn-3"><span class="visually-hidden">Переключает на промо с пломбиром с помадкой и с клубничным щербетом</span></label>
+            <label for="wrapper-btn-1" tabindex="0"><span class="visually-hidden">Переключает на промо с крем-брюле и пломбиром с малиновым джемом</span></label>
+            <label for="wrapper-btn-2" tabindex="0"><span class="visually-hidden">Переключает на промо с шоколадным пломбиром и лимонным сорбетом</span></label>
+            <label for="wrapper-btn-3" tabindex="0"><span class="visually-hidden">Переключает на промо с пломбиром с помадкой и с клубничным щербетом</span></label>
           </div>
           <ul class="slider-inner">
             <li class="slider-item slide" id="slider-item-1">
@@ -220,7 +217,7 @@
             <div class="mailing-inner">
               <p class="mailing-descripion">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="mailing-email">Введите электронную почту, куда будет отправляться рассылка</label>
+                <label class="visually-hidden" for="mailing-email" tabindex="0">Введите электронную почту, куда будет отправляться рассылка</label>
                 <input type="email" id="mailing-email" name="email" placeholder="Электронная почта">
                 <button class="button">Отправить</button>
               </form>
@@ -298,11 +295,11 @@
       <button class="modal-close feedback-modal-close" type="button"><span class="visually-hidden">Закрыть окно обратной связи</span>x</button>
       <p class="modal-feedback feedback-caption">Мы обязательно вам ответим!</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
+        <label class="visually-hidden" for="feedback-name" tabindex="0">Как вас зовут?</label>
         <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
-        <label class="visually-hidden" for="feedback-email">Ваша почта для ответа? Объязательное поле</label>
+        <label class="visually-hidden" for="feedback-email" tabindex="0">Ваша почта для ответа? Объязательное поле</label>
         <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
-        <label class="visually-hidden" for="feedback-textarea">Напишите что-нибудь...</label>
+        <label class="visually-hidden" for="feedback-textarea" tabindex="0">Напишите что-нибудь...</label>
         <textarea id="feedback-textarea" name="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
         <button class="button" type="submit">Отправить</button>
       </form>
